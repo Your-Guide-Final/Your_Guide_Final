@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5568c635454ebe4aaf3d55daa638cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receptacleAnimator: {fileID: 0}
+  receptacleAnimator: {fileID: 8887137461080160931}
   followParameterName: follow
   sprintParameterName: sprint
   stunParameterName: StunBool
@@ -1311,6 +1311,25 @@ Transform:
   m_Father: {fileID: 6630515709981190761}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8887137461080160931
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881373983759167717}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2eb2636d50696e84c99110a0bc307c28, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1683280422707920782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1602,9 +1621,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
   m_PrefabInstance: {fileID: 8611325886254370228}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6565077986779269812 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -6009415017401268480, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
+--- !u!1 &8881373983759167717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
   m_PrefabInstance: {fileID: 8611325886254370228}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &3634407801505615893 stripped
@@ -1615,5 +1634,10 @@ Transform:
 --- !u!1 &6697650125656216257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3130923172414070645, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
+  m_PrefabInstance: {fileID: 8611325886254370228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6565077986779269812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6009415017401268480, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
   m_PrefabInstance: {fileID: 8611325886254370228}
   m_PrefabAsset: {fileID: 0}
