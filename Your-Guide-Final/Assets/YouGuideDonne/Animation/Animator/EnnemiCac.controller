@@ -27,7 +27,7 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1101 &-8525053729641589193
 AnimatorStateTransition:
-  m_ObjectHideFlags: 3
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1102 &-5766586323745701812
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1102 &-936501568139174334
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -205,7 +205,7 @@ MonoBehaviour:
   effectiveTimeBeforeDegat: 0.1
 --- !u!1107 &-432018606458579195
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -233,7 +233,7 @@ AnimatorStateMachine:
   m_DefaultState: {fileID: 8770022193588939706}
 --- !u!1102 &-318633756724366921
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -246,6 +246,7 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: -763279792757376640}
   - {fileID: -3024514587381937864}
+  - {fileID: 5152561031537099611}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -273,8 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timing: 0
-  sound: {fileID: 8300000, guid: 038d85bee0143274f88643fa9a214519, type: 3}
-  loop: 0
+  eventName: event:/Ennemies/Melee/DeathMelee
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -410,8 +410,8 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1102 &2121232431645373017
 AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 3
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -445,8 +445,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -2649936629275810458, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b,
-      type: 3}
+    m_Motion: {fileID: -2649936629275810458, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b, type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 4
@@ -454,8 +453,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -7091266504172259974, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b,
-      type: 3}
+    m_Motion: {fileID: -7091266504172259974, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b, type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 4
@@ -481,8 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54c9ce76e919324bafae9f3d935388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particuleDeath: {fileID: 1905671688649153519, guid: 44a5316415784b94abf53e3fc2165d2e,
-    type: 3}
+  particuleDeath: {fileID: 1905671688649153519, guid: 44a5316415784b94abf53e3fc2165d2e, type: 3}
 --- !u!1101 &4069353495486696804
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -508,9 +505,23 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &5152561031537099611
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae866b7937b04f447b5349dd3b9c2cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timing: 0.2
+  eventName: event:/Ennemies/Melee/EnnemyMeleeAttack
 --- !u!1102 &5623576659132981744
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -538,7 +549,7 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1107 &6183226435438881096
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -597,7 +608,7 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1102 &7488389317031516012
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -616,8 +627,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 5917720853291089123, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b,
-    type: 3}
+  m_Motion: {fileID: 5917720853291089123, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -650,7 +660,7 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1102 &8770022193588939706
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -670,8 +680,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -2884585399324760929, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b,
-    type: 3}
+  m_Motion: {fileID: -2884585399324760929, guid: 1094f4dabf2ae2d429b9f13e5dc1c26b, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

@@ -14,7 +14,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(PlayerAnimator))]
 //[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(AudioSource))]
+//[RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(CharacterController))]
 
 //[RequireComponent(typeof(Animator))]

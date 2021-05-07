@@ -7,15 +7,19 @@ public class ReceptacleTimingSFX : StateMachineBehaviour
     ReceptacleControler rControler;
 
     [SerializeField] private float Timing;
-    [SerializeField] private AudioClip sound;
-    [SerializeField] private bool loop;
+    [FMODUnity.EventRef]
+    [SerializeField] private string eventName;
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         rControler = animator.GetComponentInParent<ReceptacleControler>();
-        rControler.rSFX.startCoroutineSound(Timing, loop, sound);
+        if (eventName != null)
+        {
+            rControler.rSFX.startCoroutineSound(Timing, eventName);
+
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

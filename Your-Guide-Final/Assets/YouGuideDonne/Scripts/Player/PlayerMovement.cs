@@ -89,6 +89,18 @@ public class PlayerMovement : MonoBehaviour
         charaController.SimpleMove(moveDirec);
     }
 
+    public void ChangeDirection(Vector3 directionMove)
+    {
+        if(directionMove.magnitude > minValueToMove)
+        {
+            float targetAngle = Mathf.Atan2(directionMove.x, directionMove.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(axeRota.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            axeRota.rotation = Quaternion.Euler(0f, angle, 0f);
+
+        }
+    }
+
+
     public void StartCoroutineFakeRootMotion(float vitesse, AnimationCurve curve, float duration)
     {
         StartCoroutine(FakeRootMotion(vitesse, curve, duration));

@@ -4,27 +4,17 @@ using UnityEngine;
 
 public class ReceptacleSFX : MonoBehaviour
 {
-    public AudioSource source;
+    
 
-    public IEnumerator startSound(float timing, bool loop, AudioClip clip)
+    public IEnumerator OneShotSound(float timing, string eventSfxName)
     {
         yield return new WaitForSeconds(timing);
-        source.Stop();
-        if (loop)
-        {
-            source.clip = clip;
-            source.loop = true;
-            source.Play();
-        }
-        else
-        {
-            source.loop = false;
-            source.PlayOneShot(clip);
-        }
+        FMODUnity.RuntimeManager.PlayOneShot(eventSfxName, transform.position);
+
     }
 
-    public void startCoroutineSound(float timing, bool loop, AudioClip clip)
+    public void startCoroutineSound(float timing, string eventSfxName)
     {
-        StartCoroutine(startSound(timing, loop, clip));
+        StartCoroutine(OneShotSound(timing, eventSfxName));
     }
 }

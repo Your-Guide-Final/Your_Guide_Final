@@ -58,7 +58,7 @@ public class PlayerAdrenaline : MonoBehaviour
     public bool canHeal()
     {
 
-
+        
 
         return false;
     }
