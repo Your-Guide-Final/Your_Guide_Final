@@ -1083,8 +1083,8 @@ MonoBehaviour:
   gizmoColor: {r: 1, g: 0, b: 0, a: 1}
   gizmoSize: 0.5
   pathMinDistance: 0.5
-  vitesse: 6
-  minDistanceToFollowReceptacle: 20
+  vitesse: 8
+  minDistanceToFollowReceptacle: 35
   minDistanceToFollowPlayer: 6
   minDistanceToAttack: 3
   refreshFrequency: 0.25
@@ -1138,8 +1138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9d77acf1b5de6478c992a60a564c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLifeValue: 4
-  initialLifeValue: 4
+  maxLifeValue: 5
+  initialLifeValue: 5
   godMode: 0
   lifeFillImage: {fileID: 6570036483254700482}
 --- !u!114 &3235543616495478836
