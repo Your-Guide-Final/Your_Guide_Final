@@ -4,54 +4,44 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    /*[SerializeField] GameObject prefabBoule;
-    [SerializeField] List<GameObject> pos;
+    public Animator animator;
 
-    int spawner;
-    int bouleAvant;
+    //public UnityEditor.Animations.AnimatorController an;
 
-    bool uneBouleVienDePartir;
-    bool ilyaUneBouleDansLaZone = false;
+    //public List<UnityEditor.Animations.AnimatorState> states;
 
-    
+    public AnimatorOverrideController aoc;
+    public AnimationClip animeClip;
+    public string testanime;
 
-    void Awake()
+    private void Start()
     {
-        bouleAvant = 0;
-    }
+        animator.runtimeAnimatorController = aoc;
+        aoc[testanime] = animeClip;
 
-    void Update()
-    {
-        if (uneBouleVienDePartir && !ilyaUneBouleDansLaZone)
+        /*AnimationClip[] clips = aoc.animationClips;
+        int nb = 0;*/
+
+        /*foreach (var clip in clips)
         {
-            
-
-            uneBouleVienDePartir = false;
-            ilyaUneBouleDansLaZone = true;
-
-            spawner = Random.Range(pos.Count);
-
-            Instantiate(prefabBoule, pos[spawner].tranform.position, pos[spawner].tranform.rotation);
-
-            if (spawner == bouleAvant)
+            aoc.g
+            if (clip.name == "Debug")
             {
-                bouleAvant += 1;
-                if(bouleAvant>= pos.Count)
-                {
-                    bouleAvant = 0;
-                }
+                nb++;
             }
-            else
-            {
-                bouleAvant = spawner;
-            }
-
-
-
         }
-    }*/
+
+        Debug.Log("nb debug anime =" + nb);*/
+
+        
+        //UnityEditor.Animations.AnimatorController ac = transform.GetComponent<Animator>().runtimeAnimatorController as UnityEditor.Animations.AnimatorController;
+        
+        //UnityEditorInternal.State$$anonymous$$achine sm_;
+        //UnityEditor.Animations.AnimatorState sm = ac.GetLayerState$$anonymous$$achine(0);
 
 
+        //UnityEditor.Animations.AnimatorControllerLayer layer = sm.statesRecursive;
+    }
 
 
 }
