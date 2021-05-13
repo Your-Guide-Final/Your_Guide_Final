@@ -332,6 +332,20 @@ MonoBehaviour:
   animator: {fileID: 227148420}
   triggerName: start
   maxTimeToStart: 2
+--- !u!64 &6649997023760562937
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460633476367772665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7706910383877988057, guid: c7854c8481e53b048bd8cbed922b3f1a, type: 3}
 --- !u!95 &227148420
 Animator:
   serializedVersion: 3
@@ -672,6 +686,11 @@ GameObject:
 --- !u!4 &4892347050475803601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c7854c8481e53b048bd8cbed922b3f1a, type: 3}
+  m_PrefabInstance: {fileID: 4931339087261414458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3460633476367772665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8388236923475255235, guid: c7854c8481e53b048bd8cbed922b3f1a, type: 3}
   m_PrefabInstance: {fileID: 4931339087261414458}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1049942784762315806 stripped
