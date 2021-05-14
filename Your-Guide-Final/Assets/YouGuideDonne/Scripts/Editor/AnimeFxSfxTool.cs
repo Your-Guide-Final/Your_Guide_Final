@@ -10,6 +10,8 @@ public class AnimeFxSfxTool : EditorWindow
 {
     public Animator animator;
     public AnimatorOverrideController aoc;
+    public ToolCoroutine coroutineRef;
+    public Transform toolCoroutineRef;
 
     public string debugAnimeStateName;
     public string defaultAnimeStateName;
@@ -17,7 +19,7 @@ public class AnimeFxSfxTool : EditorWindow
 
     public bool useVfx;
     public List<VisualEffect> vfx;
-    public string vfxEnventName;
+    public string vfxEventName;
     public float vfxTiming;
 
     public bool useSfx;
@@ -46,12 +48,14 @@ public class AnimeFxSfxTool : EditorWindow
 
         SerializedProperty animatorProperty = so.FindProperty("animator");
         SerializedProperty animatorOverriderProperty = so.FindProperty("aoc");
+        SerializedProperty toolRefProperty = so.FindProperty("toolCoroutineRef");
         SerializedProperty animesClipProperty = so.FindProperty("animesClip");
         SerializedProperty vfxProperty = so.FindProperty("vfx");
         SerializedProperty sfxProperty = so.FindProperty("sfxEventName");
 
         EditorGUILayout.PropertyField(animatorProperty, true);
         EditorGUILayout.PropertyField(animatorOverriderProperty, true);
+        EditorGUILayout.PropertyField(toolRefProperty, true);
 
 
         debugAnimeStateName = EditorGUILayout.TextField("Debug State Name", debugAnimeStateName);
@@ -71,7 +75,7 @@ public class AnimeFxSfxTool : EditorWindow
         if (useVfx)
         {
             EditorGUILayout.PropertyField(vfxProperty, true);
-            vfxEnventName = EditorGUILayout.TextField("VFX Event Name", vfxEnventName);
+            vfxEventName = EditorGUILayout.TextField("VFX Event Name", vfxEventName);
             vfxTiming = EditorGUILayout.FloatField("Time before Play VFX", vfxTiming);
         }
 
@@ -114,7 +118,7 @@ public class AnimeFxSfxTool : EditorWindow
 
                 for (int i = 0; i < animesClip.Count; i++)
                 {
-                    if (vfx[i] != null)
+                    if (animesClip[i] != null)
                     {
                         GUILayout.BeginHorizontal();
                         EditorGUILayout.LabelField(animesClip[i].name, EditorStyles.boldLabel);
@@ -233,7 +237,7 @@ public class AnimeFxSfxTool : EditorWindow
     public IEnumerator PlayFxWithTime(float time, VisualEffect vfxUse)
     {
         yield return new WaitForSeconds(time);
-        vfxUse.SendEvent(vfxEnventName);
+        vfxUse.SendEvent(vfxEventName);
     }
 
     public IEnumerator PlaySfxWithTime(float time, string eventName)
@@ -249,6 +253,10 @@ public class AnimeFxSfxTool : EditorWindow
     {
         if (Application.isPlaying)
         {
+            if (coroutineRef == null)
+            {
+                coroutineRef = toolCoroutineRef.GetComponent<ToolCoroutine>();
+            }
             if (animator != null)
             {
                 if (defaultAnimeStateName == "")
@@ -263,15 +271,33 @@ public class AnimeFxSfxTool : EditorWindow
                 {
                     SetDebugAnime(currentAnimeCLip);
 
-                    animator.Play(debugAnimeStateName,0);
+                    animator.SetTrigger("Debug");
+                    /*if (!animator.GetCurrentAnimatorStateInfo(0).IsName(debugAnimeStateName))
+                    {
+                        animator.Play(debugAnimeStateName,0);
+
+                    }
+                    else
+                    {
+                        animator.Play(defaultAnimeStateName, 0);
+                        animator.Play(debugAnimeStateName, 0);
+                    }*/
                     
 
                     if (useVfx)
                     {
                         if (currentVfx != null)
                         {
-                            
-                            PlayFxWithTime(vfxTiming, currentVfx);
+                            coroutineRef.PlayCoroutineFxWithTime(vfxTiming, currentVfx, vfxEventName);
+                            /*if (coroutineRef != null)
+                            {
+                                coroutineRef.PlayCoroutineFxWithTime(vfxTiming, currentVfx, vfxEventName);
+                            }
+                            else
+                            {
+                                UnityEngine.Debug.LogError("CoroutineRef can not be null");
+                            }*/
+                            //PlayFxWithTime(vfxTiming, currentVfx);
 
                         }
                         else
@@ -283,7 +309,16 @@ public class AnimeFxSfxTool : EditorWindow
                     {
                         if (currentSfxEvent != null)
                         {
-                            PlaySfxWithTime(sfxTiming, currentSfxEvent);
+                            coroutineRef.PlayCoroutineSfxWithTime(sfxTiming, currentSfxEvent, animator);
+                            /*if (coroutineRef != null)
+                            {
+                                coroutineRef.PlayCoroutineSfxWithTime(sfxTiming,currentSfxEvent,animator);
+                            }
+                            else
+                            {
+                                UnityEngine.Debug.LogError("CoroutineRef can not be null");
+                            }*/
+                            //PlaySfxWithTime(sfxTiming, currentSfxEvent);
 
                         }
                         else
@@ -306,10 +341,7 @@ public class AnimeFxSfxTool : EditorWindow
         }
     }
 
-    public void SetValue()
-    {
-
-    }
+   
 
 
     public void StopDebug()
