@@ -26,4 +26,6 @@ public class CameraManager : MonoBehaviour
         newCamera.Priority = camPriorityOn;
         activeCameraIndex = indexCam;
     }
+
+    
 }
