@@ -286,6 +286,9 @@ MonoBehaviour:
   adrenalineStartValue: 0
   adrenalineMaxValue: 100
   jaugeFillImage: {fileID: 0}
+  jaugeAnimator: {fileID: 0}
+  parameterJaugeName: jaugeValue
+  minValueToEnableHeal: 0.3
   hatMeshRenderer: {fileID: 4890933487350397885}
   EmissionColor:
     serializedVersion: 2
@@ -383,6 +386,36 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  amplitudeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  durationMin: 0.15
+  durationMax: 0.5
+  amplitudeMin: 1
+  amplitudeMax: 10
+  frequency: 5
+  camBrain: {fileID: 0}
 --- !u!114 &4058003528778094586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +1105,7 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 0, y: 0, z: 2}
+      - m_Value: {x: 0, y: 0, z: 3}
         m_Name: PositionDamageCenter
         m_Overridden: 1
     m_Vector4f:
@@ -1235,7 +1268,7 @@ VisualEffect:
       - m_Value: {x: 0, y: 0, z: 1.4}
         m_Name: Position Damage center
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 2}
+      - m_Value: {x: 0, y: 0, z: 3}
         m_Name: PositionDamageCenter
         m_Overridden: 1
     m_Vector4f:
@@ -1399,7 +1432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9074788546707071991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4988106605226528777}

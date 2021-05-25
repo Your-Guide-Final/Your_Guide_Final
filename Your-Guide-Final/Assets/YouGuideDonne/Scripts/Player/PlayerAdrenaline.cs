@@ -12,7 +12,12 @@ public class PlayerAdrenaline : MonoBehaviour
     [SerializeField] private float adrenalineStartValue;
     [SerializeField] private float adrenalineMaxValue;
 
+
+    [Header("UI")]
     [SerializeField] private Image jaugeFillImage;
+    [SerializeField] private Animator jaugeAnimator;
+    [SerializeField] private string parameterJaugeName;
+    [SerializeField] private float minValueToEnableHeal;
 
     [Header("Sign/Feedback")]
     [SerializeField] private SkinnedMeshRenderer hatMeshRenderer;
@@ -92,6 +97,20 @@ public class PlayerAdrenaline : MonoBehaviour
             hatMaterial.SetColor("_BaseColor", EmissionColor.Evaluate(0.5f));
             hatMaterial.SetColor("_EmissiveColor", EmissionColor.Evaluate(0.5f) * IntensityValue);
         }
+
+        if (pourcentageValue < minValueToEnableHeal)
+        {
+            jaugeAnimator.SetFloat(parameterJaugeName, 0);
+        }
+        else if (pourcentageValue < 1)
+        {
+            jaugeAnimator.SetFloat(parameterJaugeName, 1);
+        }
+        else
+        {
+            jaugeAnimator.SetFloat(parameterJaugeName, 2);
+        }
+
     }
 
     /*public void SetFeedBackColor()

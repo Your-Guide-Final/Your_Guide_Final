@@ -86,7 +86,11 @@ public class PlayerMovement : MonoBehaviour
             rigid.velocity = velocity;*/
         }
 
-        charaController.SimpleMove(moveDirec);
+        if (charaController.enabled)
+        {
+            charaController.SimpleMove(moveDirec);
+
+        }
     }
 
     public void ChangeDirection(Vector3 directionMove)
