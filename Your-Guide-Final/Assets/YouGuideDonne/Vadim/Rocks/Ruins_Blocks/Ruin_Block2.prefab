@@ -72,12 +72,13 @@ GameObject:
   - component: {fileID: 2866386187748184986}
   - component: {fileID: 338413000356260078}
   - component: {fileID: 5476753588030901242}
+  - component: {fileID: 799080524700332540}
   m_Layer: 0
   m_Name: Ruin_Block2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2866386187748184986
 Transform:
@@ -142,6 +143,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &799080524700332540
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650146884315025895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2066532839523324086, guid: b5deb2688ed690a41bd92096c961bbc3, type: 3}
 --- !u!1 &8775355839881078541
 GameObject:
   m_ObjectHideFlags: 0
