@@ -951,6 +951,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 0
+--- !u!114 &-4092499572633618254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661caa4cdd2e5db43ae3209c7963c199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 0
 --- !u!1102 &-4044077103995337215
 AnimatorState:
   serializedVersion: 6
@@ -1653,6 +1666,7 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: -212754900929648973}
   - {fileID: 7209268554724354284}
+  - {fileID: 7598402376188395201}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -2768,6 +2782,7 @@ AnimatorState:
   - {fileID: -5755940952119236438}
   m_StateMachineBehaviours:
   - {fileID: -3414091711992827094}
+  - {fileID: -4092499572633618254}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -2994,7 +3009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timing: 0
-  eventName: 
+  eventName: event:/Player/Fight/Damage/PlayerStunned
 --- !u!1101 &7531466339535719804
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3017,6 +3032,25 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &7598402376188395201
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95805376fdf402438abf5f683b73004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paramEventsList:
+  - paraName: PlayerStunn
+    parameterValue: 1
+    triggerEvent: 0
+  - paraName: PlayerStunn
+    parameterValue: 0
+    triggerEvent: 1
 --- !u!1101 &7633581551030818152
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3041,7 +3075,7 @@ AnimatorStateTransition:
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1102 &7771327033809012744
 AnimatorState:
   serializedVersion: 6
