@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{471d132b-891d-49cb-a98f-5e2280f3a85c}">
+		<property name="assetPath">
+			<value>Recordings/Ennemies/Grunts/E_20.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{558dc03e-bb79-4301-87a4-a3541a24c0b0}</destination>
+		</relationship>
+	</object>
+</objects>

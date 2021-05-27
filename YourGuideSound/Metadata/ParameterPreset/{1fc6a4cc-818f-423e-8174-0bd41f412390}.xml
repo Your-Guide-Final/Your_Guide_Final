@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{1fc6a4cc-818f-423e-8174-0bd41f412390}">
+		<property name="name">
+			<value>PlayerStunn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1ac316c-1955-4035-9517-63cc37ef376b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b742904c-83b1-450e-bb07-dfbd2a3d9f69}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b742904c-83b1-450e-bb07-dfbd2a3d9f69}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
