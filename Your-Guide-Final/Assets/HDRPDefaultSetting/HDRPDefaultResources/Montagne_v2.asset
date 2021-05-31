@@ -361,10 +361,10 @@ MonoBehaviour:
     m_Value: 1000
     min: 0
   baseHeight:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -23.3
   maximumHeight:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 214
   meanFreePath:
     m_OverrideState: 1
@@ -385,8 +385,8 @@ MonoBehaviour:
     min: 0
     max: 1
   depthExtent:
-    m_OverrideState: 0
-    m_Value: 64
+    m_OverrideState: 1
+    m_Value: 42.4
     min: 0.1
   denoisingMode:
     m_OverrideState: 0
