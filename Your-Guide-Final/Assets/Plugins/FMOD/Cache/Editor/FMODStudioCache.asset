@@ -1,762 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9197857467340301708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637553966772664599
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-9122885460296164954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/EnteringVegetation
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/EnteringVegetation
-  guid: f9e2bf1f0c28334185ac390b6422be4d
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3500
---- !u!114 &-8983345858106653083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/StartsRunning
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/StartsRunning
-  guid: 01de9483c1a10647b686e7195a5220f2
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2001
---- !u!114 &-8940505805500222000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Iddle
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Iddle
-  guid: 4cb743e3991cc94a9a5be47657baa6c9
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &-8871933725741715831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fight.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Fight.bank
-  Name: Fight
-  StudioPath: bank:/Fight
-  lastModified: 637553966772614741
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-8568245856361284224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/PlayerFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Player/PlayerFootsteps
-  guid: 4e565024507a1d47838fe8455a909134
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-8522234694850675065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileMoving
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileMoving
-  guid: 92c6fcce9188da488449db6314c41a5b
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 30440
---- !u!114 &-8255538138737997927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Iddle
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Iddle
-  guid: 4cb743e3991cc94a9a5be47657baa6c9
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-7979078785788175355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DistanceEnnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/DistanceEnnemy.bank
-  Name: DistanceEnnemy
-  StudioPath: bank:/DistanceEnnemy
-  lastModified: 637553966772505017
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-7918244341108344939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttack
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/EnnemyMeleeAttack
-  guid: f10a0a24543f9543b43735a6cb649c41
-  Banks:
-  - {fileID: 5599804724026189248}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1996
---- !u!114 &-7885169900598453737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/DeathDistance
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/DeathDistance
-  guid: 6600e0b65bda104b8e53dc10f3a882d8
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &-7651270536361305983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/ImpactCombo3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/ImpactCombo3
-  guid: aa1e4810389cda4289324a0585e01972
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-7561593790558943805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DistanceEnnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/DistanceEnnemy.bank
-  Name: DistanceEnnemy
-  StudioPath: bank:/DistanceEnnemy
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-7275666396507643468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Heal
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Heal
-  guid: fcf1b0a56703d243a20d71d04f067080
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5771
---- !u!114 &-7199115791930294254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwitchAttack
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwitchAttack
-  guid: 6562819247f8a44482b02d8924056bd5
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1792
---- !u!114 &-7132037957123468911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/ReceptacleFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/ReceptacleFootsteps
-  guid: 3a02077773c75643bac56a42dde9c60f
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7057826653462710065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/FightStart
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/FightStart
-  guid: 5ad1f70413702b4d8e629b0bb1a08691
-  Banks:
-  - {fileID: 2059993264408480867}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2900
---- !u!114 &-6933936473809502174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Wind
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Wind
-  guid: b66b9ccb245305429d9c283bba511c33
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 44987
---- !u!114 &-6870367520776064480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/Switch
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/Switch
-  guid: ac8332d55ed5eb4db7b17b2a07dfb885
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1842
---- !u!114 &-6777442430144577269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fight.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Fight.bank
-  Name: Fight
-  StudioPath: bank:/Fight
-  lastModified: 637577115173045044
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-6528323152274876379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MeleeEnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/MeleeEnemy.bank
-  Name: MeleeEnemy
-  StudioPath: bank:/MeleeEnemy
-  lastModified: 637553966772824208
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-6018542484419707939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttack
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/EnnemyMeleeAttack
-  guid: f10a0a24543f9543b43735a6cb649c41
-  Banks:
-  - {fileID: -2990189344028157289}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1996
---- !u!114 &-5985993660700988329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music
-  guid: d4d575d051c4614d92c5352d47f4faa6
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 4111395793215549951}
-  - {fileID: -2137662051115426788}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 144000
---- !u!114 &-5810535750103876013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiant.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Ambiant.bank
-  Name: Ambiant
-  StudioPath: bank:/Ambiant
-  lastModified: 637553966772176049
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-5752675539066755476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Waterfall
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Waterfall
-  guid: db36075c8de85d47a38835f35457b187
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42500
---- !u!114 &-5737799919757225827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/FootstepsDistanceEnnemy
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/FootstepsDistanceEnnemy
-  guid: 9fc409bf71ee124cbfa21ec86e7fafa4
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &-5725330326945088112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Damage/PlayerBumped
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Damage/PlayerBumped
-  guid: 6c27839e2bbc934a97a3fce8ad0743cb
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2002
---- !u!114 &-5688629333176687198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Quick Heal
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Quick Heal
-  guid: 4d20a32943ce7e45b6d29867415e4055
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &-5595670372179544548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/LowLife
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/LowLife
-  guid: 00e5a1b55d18894db0c030da9b8e19a3
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &-5547652508743144744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/FightStart
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/FightStart
-  guid: 5ad1f70413702b4d8e629b0bb1a08691
-  Banks:
-  - {fileID: -8871933725741715831}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10483
---- !u!114 &-5476769960771449984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/WindSafeZone
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/WindSafeZone
-  guid: 2f1085834309c24badfd687c8dee1f32
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 191986
---- !u!114 &-5413271792656500615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/SwitchUnavailable
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/SwitchUnavailable
-  guid: e37d80c091bd8e42ab4051211b6f4aa2
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-5196081098975551664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Fire
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Fire
-  guid: f6d7d3fd853e0845957bb4a04a28727a
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 29400
---- !u!114 &-5189861747509076669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/ReceptacleFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/ReceptacleFootsteps
-  guid: 3a02077773c75643bac56a42dde9c60f
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5130227677983287446
+--- !u!114 &-8297547092382597735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -771,7 +15,7 @@ MonoBehaviour:
   Path: event:/Ennemies/EnnemyGrunt
   guid: 73218f42e3f49c49ba31c7bcf392e1af
   Banks:
-  - {fileID: -6528323152274876379}
+  - {fileID: 4807576992873524890}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -779,343 +23,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5110136190765255037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileSpit
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileSpit
-  guid: 6c225f12624bf84fa042f2d0abadfdab
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &-5019808543919482492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/DistanceHint
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/DistanceHint
-  guid: 2f203e3536497f47b46dddfd15698f4f
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-4840151102543397059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/StartsRunning
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/StartsRunning
-  guid: 01de9483c1a10647b686e7195a5220f2
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2001
---- !u!114 &-4466367483978845461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MeleeEnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/MeleeEnemy.bank
-  Name: MeleeEnemy
-  StudioPath: bank:/MeleeEnemy
-  lastModified: 637553966772824208
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-4263608377088861840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 3608
-  Exists: 1
---- !u!114 &-3986657240525925754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/ReceptacleFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/ReceptacleFootsteps
-  guid: 3a02077773c75643bac56a42dde9c60f
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3912066277987856934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-3895942146419346543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/DistanceHint
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/DistanceHint
-  guid: 2f203e3536497f47b46dddfd15698f4f
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-3884841196978989579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwitchAttack
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwitchAttack
-  guid: 6562819247f8a44482b02d8924056bd5
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1792
---- !u!114 &-3846023052686984630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Quick Heal
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Quick Heal
-  guid: 4d20a32943ce7e45b6d29867415e4055
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &-3833381023875472010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileSpit
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileSpit
-  guid: 6c225f12624bf84fa042f2d0abadfdab
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &-3810486281118686422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Souls/SoulEntersReceptacle
-  m_EditorClassIdentifier: 
-  Path: event:/Souls/SoulEntersReceptacle
-  guid: 006f91f72ac04a45bdc0a2ea44fa217b
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3747735363823179275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileExplosion
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileExplosion
-  guid: d00a1c5dbb91b24e81153adb895a053d
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6000
---- !u!114 &-3701123303710898711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/StartsRunning
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/StartsRunning
-  guid: 01de9483c1a10647b686e7195a5220f2
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2001
---- !u!114 &-3539096344783162831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/DustFalling
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/DustFalling
-  guid: c2c4a830d3069e4ba0f13a9343484339
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3155
---- !u!114 &-3507127340413042682
+--- !u!114 &-8148499711003025214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1130,7 +38,7 @@ MonoBehaviour:
   Path: event:/Ennemies/Melee/FootstepsMeleeEnnemy
   guid: d6589ca6996774489c89177887284020
   Banks:
-  - {fileID: -6528323152274876379}
+  - {fileID: 4807576992873524890}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1138,7 +46,235 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
---- !u!114 &-3308708027269418176
+--- !u!114 &-8076529027464506822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttack
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Melee/EnnemyMeleeAttack
+  guid: f10a0a24543f9543b43735a6cb649c41
+  Banks:
+  - {fileID: 4807576992873524890}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1996
+--- !u!114 &-7884244685977390954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: d4d575d051c4614d92c5352d47f4faa6
+  Banks:
+  - {fileID: -5155717665900560681}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1633919671548128099}
+  - {fileID: 2903543385661962360}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 144000
+--- !u!114 &-7574014075963863575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/DropSoul
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/DropSoul
+  guid: 606363ac7f527a4d98914474f04095b2
+  Banks:
+  - {fileID: -5839401551167478480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3138
+--- !u!114 &-7395739831855931408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Receptacle/LowLife
+  m_EditorClassIdentifier: 
+  Path: event:/Receptacle/LowLife
+  guid: 00e5a1b55d18894db0c030da9b8e19a3
+  Banks:
+  - {fileID: 2540475420586825419}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &-7100139640480985859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Distance/DeathDistance
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Distance/DeathDistance
+  guid: 6600e0b65bda104b8e53dc10f3a882d8
+  Banks:
+  - {fileID: -2372714343079394918}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &-7089480648970932904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Receptacle/Scared
+  m_EditorClassIdentifier: 
+  Path: event:/Receptacle/Scared
+  guid: 8b2bcf2f1f5981449d8fe5733f673418
+  Banks:
+  - {fileID: 2540475420586825419}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-6420725889481425583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Attack/SwitchAttack
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Attack/SwitchAttack
+  guid: 6562819247f8a44482b02d8924056bd5
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1792
+--- !u!114 &-5839401551167478480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fight.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Asset/Fmod_Asset/Desktop/Fight.bank
+  Name: Fight
+  StudioPath: bank:/Fight
+  lastModified: 637580679520000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5567633227872245885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Switch/SwitchUnavailable
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Switch/SwitchUnavailable
+  guid: e37d80c091bd8e42ab4051211b6f4aa2
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5250615542096573117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Souls/SoulEntersReceptacle
+  m_EditorClassIdentifier: 
+  Path: event:/Souls/SoulEntersReceptacle
+  guid: 006f91f72ac04a45bdc0a2ea44fa217b
+  Banks:
+  - {fileID: 2540475420586825419}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5155717665900560681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1150,14 +286,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Ambiant.bank
   m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Ambiant.bank
+  Path: Assets/Asset/Fmod_Asset/Desktop/Ambiant.bank
   Name: Ambiant
   StudioPath: bank:/Ambiant
-  lastModified: 637553966772176049
+  lastModified: 637580679520000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &-3305676333662856118
+--- !u!114 &-4771997102357744810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1177,921 +313,7 @@ MonoBehaviour:
     data1: 508089472
     data2: 124600446
   Exists: 1
---- !u!114 &-3112607531554222541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/SwitchUnavailable
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/SwitchUnavailable
-  guid: e37d80c091bd8e42ab4051211b6f4aa2
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-2990189344028157289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MeleeEnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/MeleeEnemy.bank
-  Name: MeleeEnemy
-  StudioPath: bank:/MeleeEnemy
-  lastModified: 637577115173234539
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2956363278146642458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttackHIT
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/EnnemyMeleeAttackHIT
-  guid: 85693b443bd53a47af2c6d89a09c72d6
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1485
---- !u!114 &-2915847736783669767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/FightZone OpeningClosing
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/FightZone OpeningClosing
-  guid: c72414bfc3e238418890855e86435c68
-  Banks:
-  - {fileID: 2059993264408480867}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5500
---- !u!114 &-2680068829977571352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DistanceEnnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/DistanceEnnemy.bank
-  Name: DistanceEnnemy
-  StudioPath: bank:/DistanceEnnemy
-  lastModified: 637553966772505017
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-2642107509607744374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiant.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Ambiant.bank
-  Name: Ambiant
-  StudioPath: bank:/Ambiant
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2563152833133804983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Fire
-  m_EditorClassIdentifier: 
-  Path: event:/Fire
-  guid: f6d7d3fd853e0845957bb4a04a28727a
-  Banks:
-  - {fileID: -3308708027269418176}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 21000
---- !u!114 &-2543971606049625027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/GameOver
-  m_EditorClassIdentifier: 
-  Path: event:/GameOver
-  guid: 7e64b71d181f8a47a80e953ce6aab080
-  Banks:
-  - {fileID: 2059993264408480867}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2594
---- !u!114 &-2486630276022650119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/ReceptacleOpening
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/ReceptacleOpening
-  guid: 6fcb82d8448bd2448de848ba2f3a45ec
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-2474074656868134077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/SwitchAvailable
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/SwitchAvailable
-  guid: d509592bc4c03642b2d7916505bfab33
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-2360140540717302301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-2329429181921611487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/FootstepsDistanceEnnemy
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/FootstepsDistanceEnnemy
-  guid: 9fc409bf71ee124cbfa21ec86e7fafa4
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &-2273457551616203774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Backup/LowLife2
-  m_EditorClassIdentifier: 
-  Path: event:/Backup/LowLife2
-  guid: 26f3e295a478bb4a93f584ad988ceec0
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &-2168026873012704482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Life
-  m_EditorClassIdentifier: 
-  Name: Life
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-2154186854954133235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileCharging
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileCharging
-  guid: 9963d3a75517c44c88793d7c05e2310b
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4500
---- !u!114 &-2137662051115426788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Life
-  m_EditorClassIdentifier: 
-  Name: Life
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-1945530886811881726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Backup/LowLife2
-  m_EditorClassIdentifier: 
-  Path: event:/Backup/LowLife2
-  guid: 26f3e295a478bb4a93f584ad988ceec0
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &-1795434721066363248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Heal
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Heal
-  guid: fcf1b0a56703d243a20d71d04f067080
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5771
---- !u!114 &-1328553615545684899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637553966772664599
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1216054765746797275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Souls/SoulEntersReceptacle
-  m_EditorClassIdentifier: 
-  Path: event:/Souls/SoulEntersReceptacle
-  guid: 006f91f72ac04a45bdc0a2ea44fa217b
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1022454232947911647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Life
-  m_EditorClassIdentifier: 
-  Name: Life
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-969927852754397582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/DeathMelee
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/DeathMelee
-  guid: 71695837e75a0740acf23e37af6722ea
-  Banks:
-  - {fileID: 5599804724026189248}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &-852744152171108365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Life
-  m_EditorClassIdentifier: 
-  Name: Life
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-810373313122660548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/DeathMelee
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/DeathMelee
-  guid: 71695837e75a0740acf23e37af6722ea
-  Banks:
-  - {fileID: -2990189344028157289}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &-788020534725275817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/DustFalling
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/DustFalling
-  guid: c2c4a830d3069e4ba0f13a9343484339
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3155
---- !u!114 &-761378915915291866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Insects/InsectsFleeing
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Insects/InsectsFleeing
-  guid: 6a2abc9e2badeb40a6c375abaaaca7c9
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &-755330301162991782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/FootstepsDistanceEnnemy
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/FootstepsDistanceEnnemy
-  guid: 9fc409bf71ee124cbfa21ec86e7fafa4
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &-529272688618429454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/FightStart
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/FightStart
-  guid: 5ad1f70413702b4d8e629b0bb1a08691
-  Banks:
-  - {fileID: -6777442430144577269}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2900
---- !u!114 &-380620218450726789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Receptacle.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Receptacle.bank
-  Name: Receptacle
-  StudioPath: bank:/Receptacle
-  lastModified: 637553966772903959
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-357970555183119304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/DropSoul
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/DropSoul
-  guid: 606363ac7f527a4d98914474f04095b2
-  Banks:
-  - {fileID: -8871933725741715831}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3138
---- !u!114 &-269716591193423736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileMoving
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileMoving
-  guid: 92c6fcce9188da488449db6314c41a5b
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 30440
---- !u!114 &-191805099636484837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/EnnemyGrunt
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/EnnemyGrunt
-  guid: 73218f42e3f49c49ba31c7bcf392e1af
-  Banks:
-  - {fileID: 5599804724026189248}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-107873906605605193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/FightZone OpeningClosing
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/FightZone OpeningClosing
-  guid: c72414bfc3e238418890855e86435c68
-  Banks:
-  - {fileID: -6777442430144577269}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5500
---- !u!114 &-104208782173079924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Fountain
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Fountain
-  guid: 4e9d68c99f86dc4589ad30b29285417a
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 44999
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -4263608377088861840}
-  - {fileID: -2642107509607744374}
-  - {fileID: 6584096574997865033}
-  - {fileID: -7561593790558943805}
-  - {fileID: 2059993264408480867}
-  - {fileID: 5845564954115218902}
-  - {fileID: 5599804724026189248}
-  - {fileID: 5444208900461786336}
-  EditorEvents:
-  - {fileID: 4505066535223848363}
-  - {fileID: -8568245856361284224}
-  - {fileID: 3615944454745707420}
-  - {fileID: -7199115791930294254}
-  - {fileID: 490530152529828575}
-  - {fileID: -7651270536361305983}
-  - {fileID: 8019721266769315241}
-  - {fileID: 3831074114673916254}
-  - {fileID: 7700692507461289348}
-  - {fileID: 5291723636618085672}
-  - {fileID: -5019808543919482492}
-  - {fileID: 9133177008010536200}
-  - {fileID: 8020457755341347502}
-  - {fileID: -5110136190765255037}
-  - {fileID: -269716591193423736}
-  - {fileID: 1968125935790727345}
-  - {fileID: -2329429181921611487}
-  - {fileID: 5917588148713767720}
-  - {fileID: -7057826653462710065}
-  - {fileID: 8750878650703333589}
-  - {fileID: -2543971606049625027}
-  - {fileID: -969927852754397582}
-  - {fileID: -191805099636484837}
-  - {fileID: 7934977123489306477}
-  - {fileID: 7399527764175991530}
-  - {fileID: -7918244341108344939}
-  - {fileID: -1216054765746797275}
-  - {fileID: -5595670372179544548}
-  - {fileID: -4840151102543397059}
-  - {fileID: -5189861747509076669}
-  - {fileID: -8940505805500222000}
-  - {fileID: -3846023052686984630}
-  - {fileID: 7015026181609107457}
-  - {fileID: 4963787914256629697}
-  - {fileID: -1795434721066363248}
-  - {fileID: -5476769960771449984}
-  - {fileID: 6053362025543664375}
-  - {fileID: -104208782173079924}
-  - {fileID: 5889491627693023478}
-  - {fileID: 463818494806283709}
-  - {fileID: -3539096344783162831}
-  - {fileID: 1610160075482405823}
-  - {fileID: 7034256051051168674}
-  - {fileID: 3920136916314517897}
-  - {fileID: -9122885460296164954}
-  - {fileID: 6719912135953995366}
-  - {fileID: -2915847736783669767}
-  EditorParameters:
-  - {fileID: -3305676333662856118}
-  MasterBanks:
-  - {fileID: 5845564954115218902}
-  StringsBanks:
-  - {fileID: -4263608377088861840}
-  stringsBankWriteTime: 637578157900000000
-  cacheVersion: 6
---- !u!114 &289094524305496955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637577115173055016
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 3608
-  Exists: 1
---- !u!114 &364465855452091281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwordSlash1-2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwordSlash1-2
-  guid: f261d2bcade45446b7f6bf6ee12feb1e
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1500
---- !u!114 &463818494806283709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Wind
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Wind
-  guid: b66b9ccb245305429d9c283bba511c33
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 44987
---- !u!114 &490530152529828575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Damage/PlayerBumped
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Damage/PlayerBumped
-  guid: 6c27839e2bbc934a97a3fce8ad0743cb
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2002
---- !u!114 &515980572307357752
+--- !u!114 &-3134924138846845597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2106,7 +328,7 @@ MonoBehaviour:
   Path: event:/Player/PlayerFootsteps
   guid: 4e565024507a1d47838fe8455a909134
   Banks:
-  - {fileID: 933712580988610575}
+  - {fileID: 2073389515295880997}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2114,7 +336,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &531857108104756110
+--- !u!114 &-2602268110906287466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2124,20 +346,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileSpit
+  m_Name: event:/Environment/EnteringVegetation
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileSpit
-  guid: 6c225f12624bf84fa042f2d0abadfdab
+  Path: event:/Environment/EnteringVegetation
+  guid: f9e2bf1f0c28334185ac390b6422be4d
   Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
+  - {fileID: 2073389515295880997}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2500
---- !u!114 &933712580988610575
+  Length: 3500
+--- !u!114 &-2372714343079394918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2147,16 +369,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Character.bank
+  m_Name: bank:/DistanceEnnemy.bank
   m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Character.bank
-  Name: Character
-  StudioPath: bank:/Character
-  lastModified: 637553966772275635
+  Path: Assets/Asset/Fmod_Asset/Desktop/DistanceEnnemy.bank
+  Name: DistanceEnnemy
+  StudioPath: bank:/DistanceEnnemy
+  lastModified: 637580679520000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &965667826064357240
+--- !u!114 &-2036970203843597879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2166,36 +388,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Character.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Character.bank
-  Name: Character
-  StudioPath: bank:/Character
-  lastModified: 637577115172875493
+  Path: Assets/Asset/Fmod_Asset/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637580679520000000
   LoadResult: 0
-  FileSizes: []
+  FileSizes:
+  - Name: 
+    Value: 3608
   Exists: 1
---- !u!114 &1054428217721256705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Life
-  m_EditorClassIdentifier: 
-  Name: Life
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &1088766070660716096
+--- !u!114 &-1881788096848541214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2205,20 +409,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/DropSoul
+  m_Name: event:/Ennemies/FightStart
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/DropSoul
-  guid: 606363ac7f527a4d98914474f04095b2
+  Path: event:/Ennemies/FightStart
+  guid: 5ad1f70413702b4d8e629b0bb1a08691
   Banks:
-  - {fileID: -6777442430144577269}
+  - {fileID: -5839401551167478480}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2900
+--- !u!114 &-1822497681492035724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Receptacle/ReceptacleFootsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Receptacle/ReceptacleFootsteps
+  guid: 3a02077773c75643bac56a42dde9c60f
+  Banks:
+  - {fileID: 2540475420586825419}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3138
---- !u!114 &1181933466252761666
+  Length: 0
+--- !u!114 &-1780153449700949454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2228,12 +455,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/MeleeHint
+  m_Name: event:/Receptacle/ReceptacleOpening
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/MeleeHint
-  guid: b8b6677061d66741a1c5fc481bd06027
+  Path: event:/Receptacle/ReceptacleOpening
+  guid: 6fcb82d8448bd2448de848ba2f3a45ec
   Banks:
-  - {fileID: -2990189344028157289}
+  - {fileID: 2540475420586825419}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2241,250 +468,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &1530496895219367398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Life
-  m_EditorClassIdentifier: 
-  Name: Life
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &1610160075482405823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music
-  guid: d4d575d051c4614d92c5352d47f4faa6
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 2213668915498740110}
-  - {fileID: 1530496895219367398}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 144000
---- !u!114 &1674277545610209906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttack
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/EnnemyMeleeAttack
-  guid: f10a0a24543f9543b43735a6cb649c41
-  Banks:
-  - {fileID: -6528323152274876379}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1996
---- !u!114 &1830086414725030329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Backup/LowLife2
-  m_EditorClassIdentifier: 
-  Path: event:/Backup/LowLife2
-  guid: 26f3e295a478bb4a93f584ad988ceec0
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &1861163077420249469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Scared
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Scared
-  guid: 8b2bcf2f1f5981449d8fe5733f673418
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &1878119434061714136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/DeathMelee
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/DeathMelee
-  guid: 71695837e75a0740acf23e37af6722ea
-  Banks:
-  - {fileID: -6528323152274876379}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &1910831252008555969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Souls/SoulEntersReceptacle
-  m_EditorClassIdentifier: 
-  Path: event:/Souls/SoulEntersReceptacle
-  guid: 006f91f72ac04a45bdc0a2ea44fa217b
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1968125935790727345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileCharging
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileCharging
-  guid: 9963d3a75517c44c88793d7c05e2310b
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4500
---- !u!114 &2042352173422451644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/GameOver
-  m_EditorClassIdentifier: 
-  Path: event:/GameOver
-  guid: 7e64b71d181f8a47a80e953ce6aab080
-  Banks:
-  - {fileID: -8871933725741715831}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2594
---- !u!114 &2059993264408480867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fight.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Fight.bank
-  Name: Fight
-  StudioPath: bank:/Fight
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &2108794208198847112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiant.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Ambiant.bank
-  Name: Ambiant
-  StudioPath: bank:/Ambiant
-  lastModified: 637577115172795710
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &2213668915498740110
+--- !u!114 &-1633919671548128099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2504,141 +488,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
---- !u!114 &2669744080938495842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/LowLife
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/LowLife
-  guid: 00e5a1b55d18894db0c030da9b8e19a3
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &3089351597666997460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileExplosion
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileExplosion
-  guid: d00a1c5dbb91b24e81153adb895a053d
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4700
---- !u!114 &3116887495317236867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/ReceptacleOpening
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/ReceptacleOpening
-  guid: 6fcb82d8448bd2448de848ba2f3a45ec
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &3122648289119729092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/ImpactCombo3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/ImpactCombo3
-  guid: aa1e4810389cda4289324a0585e01972
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &3510058607554497534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Receptacle.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Receptacle.bank
-  Name: Receptacle
-  StudioPath: bank:/Receptacle
-  lastModified: 637577115173299436
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3615944454745707420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwordSlash3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwordSlash3
-  guid: 52dcace3c5f1a046b12896773bfaca2a
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1510
---- !u!114 &3831074114673916254
+--- !u!114 &-1441547018543845371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2653,7 +503,7 @@ MonoBehaviour:
   Path: event:/Player/Fight/Switch/SwitchAvailable
   guid: d509592bc4c03642b2d7916505bfab33
   Banks:
-  - {fileID: 6584096574997865033}
+  - {fileID: 2073389515295880997}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2661,7 +511,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &3841596424530541453
+--- !u!114 &-1280181170835239202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2671,20 +521,362 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/WindSafeZone
+  m_Name: event:/Ennemies/Distance/FootstepsDistanceEnnemy
   m_EditorClassIdentifier: 
-  Path: event:/Environment/WindSafeZone
-  guid: 2f1085834309c24badfd687c8dee1f32
+  Path: event:/Ennemies/Distance/FootstepsDistanceEnnemy
+  guid: 9fc409bf71ee124cbfa21ec86e7fafa4
   Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 1
+  - {fileID: -2372714343079394918}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-932682438177620229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Damage/PlayerBumped
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Damage/PlayerBumped
+  guid: 6c27839e2bbc934a97a3fce8ad0743cb
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 191986
---- !u!114 &3920136916314517897
+  Length: 2002
+--- !u!114 &-250648682105467387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Waterfall
+  guid: db36075c8de85d47a38835f35457b187
+  Banks:
+  - {fileID: -5155717665900560681}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42500
+--- !u!114 &-245258562305482584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Receptacle/Iddle
+  m_EditorClassIdentifier: 
+  Path: event:/Receptacle/Iddle
+  guid: 4cb743e3991cc94a9a5be47657baa6c9
+  Banks:
+  - {fileID: 2540475420586825419}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -2036970203843597879}
+  - {fileID: -5155717665900560681}
+  - {fileID: 2073389515295880997}
+  - {fileID: -2372714343079394918}
+  - {fileID: -5839401551167478480}
+  - {fileID: 5682948577834672204}
+  - {fileID: 4807576992873524890}
+  - {fileID: 2540475420586825419}
+  EditorEvents:
+  - {fileID: 5129292337439949229}
+  - {fileID: 8175935343458864672}
+  - {fileID: 3378894829300404407}
+  - {fileID: 7835989054767044938}
+  - {fileID: 3733275945468226344}
+  - {fileID: 7253389034541731742}
+  - {fileID: -7884244685977390954}
+  - {fileID: -250648682105467387}
+  - {fileID: 3070981794991508376}
+  - {fileID: 3759665714551564608}
+  - {fileID: -3134924138846845597}
+  - {fileID: 6589949439568254853}
+  - {fileID: -6420725889481425583}
+  - {fileID: -932682438177620229}
+  - {fileID: 1183594637479429272}
+  - {fileID: 7172914935127360726}
+  - {fileID: -1441547018543845371}
+  - {fileID: -5567633227872245885}
+  - {fileID: 6075349412517913382}
+  - {fileID: -2602268110906287466}
+  - {fileID: 1508031369772741965}
+  - {fileID: 7265510653033791634}
+  - {fileID: -7100139640480985859}
+  - {fileID: 4412659254753945765}
+  - {fileID: 134453813565311904}
+  - {fileID: 6185696213904269440}
+  - {fileID: 3524430211770086935}
+  - {fileID: -1280181170835239202}
+  - {fileID: 4141059473682489904}
+  - {fileID: -1881788096848541214}
+  - {fileID: -7574014075963863575}
+  - {fileID: 6475022187648678061}
+  - {fileID: 3584883061365332340}
+  - {fileID: 8299089017763689550}
+  - {fileID: -8297547092382597735}
+  - {fileID: 3045159177178320165}
+  - {fileID: -8148499711003025214}
+  - {fileID: -8076529027464506822}
+  - {fileID: -5250615542096573117}
+  - {fileID: -7395739831855931408}
+  - {fileID: 2409685690777512497}
+  - {fileID: -1822497681492035724}
+  - {fileID: -245258562305482584}
+  - {fileID: 5027337142375326994}
+  - {fileID: -1780153449700949454}
+  - {fileID: -7089480648970932904}
+  - {fileID: 2663929763034777965}
+  EditorParameters:
+  - {fileID: -4771997102357744810}
+  MasterBanks:
+  - {fileID: 5682948577834672204}
+  StringsBanks:
+  - {fileID: -2036970203843597879}
+  stringsBankWriteTime: 637580679520000000
+  cacheVersion: 6
+--- !u!114 &134453813565311904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttackHIT
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Melee/EnnemyMeleeAttackHIT
+  guid: 85693b443bd53a47af2c6d89a09c72d6
+  Banks:
+  - {fileID: -2372714343079394918}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1485
+--- !u!114 &1183594637479429272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Attack/ImpactCombo3
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Attack/ImpactCombo3
+  guid: aa1e4810389cda4289324a0585e01972
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1508031369772741965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Distance/DistanceHint
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Distance/DistanceHint
+  guid: 2f203e3536497f47b46dddfd15698f4f
+  Banks:
+  - {fileID: -2372714343079394918}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &2073389515295880997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Character.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Asset/Fmod_Asset/Desktop/Character.bank
+  Name: Character
+  StudioPath: bank:/Character
+  lastModified: 637580679520000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2409685690777512497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Receptacle/StartsRunning
+  m_EditorClassIdentifier: 
+  Path: event:/Receptacle/StartsRunning
+  guid: 01de9483c1a10647b686e7195a5220f2
+  Banks:
+  - {fileID: 2540475420586825419}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2001
+--- !u!114 &2540475420586825419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Receptacle.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Asset/Fmod_Asset/Desktop/Receptacle.bank
+  Name: Receptacle
+  StudioPath: bank:/Receptacle
+  lastModified: 637580679520000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2663929763034777965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Receptacle/Heal
+  m_EditorClassIdentifier: 
+  Path: event:/Receptacle/Heal
+  guid: fcf1b0a56703d243a20d71d04f067080
+  Banks:
+  - {fileID: 2540475420586825419}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5771
+--- !u!114 &2903543385661962360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Life
+  m_EditorClassIdentifier: 
+  Name: Life
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &3045159177178320165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Melee/MeleeHint
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Melee/MeleeHint
+  guid: b8b6677061d66741a1c5fc481bd06027
+  Banks:
+  - {fileID: 4807576992873524890}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &3070981794991508376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2699,7 +891,7 @@ MonoBehaviour:
   Path: event:/Environment/Fire
   guid: e1538e679186e94c8643888c2bcc2fb5
   Banks:
-  - {fileID: -2642107509607744374}
+  - {fileID: -5155717665900560681}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2707,1127 +899,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 29400
---- !u!114 &4111395793215549951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &4155481795568542129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/DeathDistance
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/DeathDistance
-  guid: 6600e0b65bda104b8e53dc10f3a882d8
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &4172650044787633247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Insects/ButterfliesFlyingOff
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Insects/ButterfliesFlyingOff
-  guid: 2f114c1c09d9714abef644b4cf15834b
-  Banks:
-  - {fileID: 2108794208198847112}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 959
---- !u!114 &4179885761887023259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/MeleeHint
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/MeleeHint
-  guid: b8b6677061d66741a1c5fc481bd06027
-  Banks:
-  - {fileID: -6528323152274876379}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &4363353448684435306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &4411917283188200002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/CounterProjectile
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/CounterProjectile
-  guid: 5fc0192a88623344b11ce997d37523c6
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3575
---- !u!114 &4505066535223848363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Damage/PlayerStunned
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Damage/PlayerStunned
-  guid: 1cdccf352700754d85e0a4b65bac0ff3
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7000
---- !u!114 &4783974369301669785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/Switch
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/Switch
-  guid: ac8332d55ed5eb4db7b17b2a07dfb885
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1842
---- !u!114 &4879900396052903352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwordSlash1-2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwordSlash1-2
-  guid: f261d2bcade45446b7f6bf6ee12feb1e
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1500
---- !u!114 &4886961016004896815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/GameOver
-  m_EditorClassIdentifier: 
-  Path: event:/GameOver
-  guid: 7e64b71d181f8a47a80e953ce6aab080
-  Banks:
-  - {fileID: -6777442430144577269}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2594
---- !u!114 &4963787914256629697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Scared
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Scared
-  guid: 8b2bcf2f1f5981449d8fe5733f673418
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &5291723636618085672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwordSlash1-2
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwordSlash1-2
-  guid: f261d2bcade45446b7f6bf6ee12feb1e
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1500
---- !u!114 &5326521365950029997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/LowLife
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/LowLife
-  guid: 00e5a1b55d18894db0c030da9b8e19a3
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &5444208900461786336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Receptacle.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Receptacle.bank
-  Name: Receptacle
-  StudioPath: bank:/Receptacle
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &5599804724026189248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MeleeEnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/MeleeEnemy.bank
-  Name: MeleeEnemy
-  StudioPath: bank:/MeleeEnemy
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &5685286839729104575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &5845564954115218902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &5889491627693023478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Insects/InsectsFleeing
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Insects/InsectsFleeing
-  guid: 6a2abc9e2badeb40a6c375abaaaca7c9
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &5917588148713767720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileExplosion
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileExplosion
-  guid: d00a1c5dbb91b24e81153adb895a053d
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4700
---- !u!114 &6023801233597866425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileCharging
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileCharging
-  guid: 9963d3a75517c44c88793d7c05e2310b
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3100
---- !u!114 &6053362025543664375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Insects/ButterfliesFlyingOff
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Insects/ButterfliesFlyingOff
-  guid: 2f114c1c09d9714abef644b4cf15834b
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 959
---- !u!114 &6141102438900849078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/ImpactCombo3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/ImpactCombo3
-  guid: aa1e4810389cda4289324a0585e01972
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &6247491735594657399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637553966772664599
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &6460773428137725013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwordSlash3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwordSlash3
-  guid: 52dcace3c5f1a046b12896773bfaca2a
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1510
---- !u!114 &6535708660520975094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637553966772704493
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 2842
-  Exists: 1
---- !u!114 &6584096574997865033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Character.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/Character.bank
-  Name: Character
-  StudioPath: bank:/Character
-  lastModified: 637578157900000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &6715764307179210887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Fire
-  m_EditorClassIdentifier: 
-  Path: event:/Fire
-  guid: f6d7d3fd853e0845957bb4a04a28727a
-  Banks: []
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 21000
---- !u!114 &6719912135953995366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/EnnemyMeleeAttackHIT
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/EnnemyMeleeAttackHIT
-  guid: 85693b443bd53a47af2c6d89a09c72d6
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1485
---- !u!114 &6890706904828419381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Receptacle.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Receptacle.bank
-  Name: Receptacle
-  StudioPath: bank:/Receptacle
-  lastModified: 637553966772903959
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &6940160873884221768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Iddle
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Iddle
-  guid: 4cb743e3991cc94a9a5be47657baa6c9
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &7015026181609107457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/ReceptacleOpening
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/ReceptacleOpening
-  guid: 6fcb82d8448bd2448de848ba2f3a45ec
-  Banks:
-  - {fileID: 5444208900461786336}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &7034256051051168674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/Waterfall
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/Waterfall
-  guid: db36075c8de85d47a38835f35457b187
-  Banks:
-  - {fileID: -2642107509607744374}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42500
---- !u!114 &7082407798587726175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/EnnemyGrunt
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/EnnemyGrunt
-  guid: 73218f42e3f49c49ba31c7bcf392e1af
-  Banks:
-  - {fileID: -2990189344028157289}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7169673977598218924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Heal
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Heal
-  guid: fcf1b0a56703d243a20d71d04f067080
-  Banks:
-  - {fileID: 3510058607554497534}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5771
---- !u!114 &7295317343435183389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fight.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Fight.bank
-  Name: Fight
-  StudioPath: bank:/Fight
-  lastModified: 637553966772614741
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &7375513483132386028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayerStunn
-  m_EditorClassIdentifier: 
-  Name: PlayerStunn
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 508089472
-    data2: 124600446
-  Exists: 1
---- !u!114 &7399527764175991530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/FootstepsMeleeEnnemy
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/FootstepsMeleeEnnemy
-  guid: d6589ca6996774489c89177887284020
-  Banks:
-  - {fileID: 5599804724026189248}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &7414466914554401467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Damage/PlayerStunned
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Damage/PlayerStunned
-  guid: 1cdccf352700754d85e0a4b65bac0ff3
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7000
---- !u!114 &7681757008039193936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/PlayerFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Player/PlayerFootsteps
-  guid: 4e565024507a1d47838fe8455a909134
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &7700692507461289348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/SwitchUnavailable
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/SwitchUnavailable
-  guid: e37d80c091bd8e42ab4051211b6f4aa2
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &7808203052421593385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwordSlash3
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwordSlash3
-  guid: 52dcace3c5f1a046b12896773bfaca2a
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1510
---- !u!114 &7934977123489306477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/MeleeHint
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/MeleeHint
-  guid: b8b6677061d66741a1c5fc481bd06027
-  Banks:
-  - {fileID: 5599804724026189248}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &7937907618918493896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Attack/SwitchAttack
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Attack/SwitchAttack
-  guid: 6562819247f8a44482b02d8924056bd5
-  Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1792
---- !u!114 &8019721266769315241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/Switch
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/Switch
-  guid: ac8332d55ed5eb4db7b17b2a07dfb885
-  Banks:
-  - {fileID: 6584096574997865033}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1842
---- !u!114 &8020457755341347502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/DeathDistance
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/DeathDistance
-  guid: 6600e0b65bda104b8e53dc10f3a882d8
-  Banks:
-  - {fileID: -7561593790558943805}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
---- !u!114 &8037593909181610975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Character.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Character.bank
-  Name: Character
-  StudioPath: bank:/Character
-  lastModified: 637553966772275635
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &8073781969645720626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Receptacle/Scared
-  m_EditorClassIdentifier: 
-  Path: event:/Receptacle/Scared
-  guid: 8b2bcf2f1f5981449d8fe5733f673418
-  Banks:
-  - {fileID: 6890706904828419381}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &8226040071572187138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/CounterProjectile
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/CounterProjectile
-  guid: 5fc0192a88623344b11ce997d37523c6
-  Banks:
-  - {fileID: 8316731304052781491}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3575
---- !u!114 &8279948123197684344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Damage/PlayerStunned
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Damage/PlayerStunned
-  guid: 1cdccf352700754d85e0a4b65bac0ff3
-  Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7000
---- !u!114 &8298687383798956782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637553966772704493
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 2842
-  Exists: 0
---- !u!114 &8316731304052781491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DistanceEnnemy.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Asset/Fmod_Asset/Desktop/DistanceEnnemy.bank
-  Name: DistanceEnnemy
-  StudioPath: bank:/DistanceEnnemy
-  lastModified: 637577115172995178
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &8328950704128906002
+--- !u!114 &3378894829300404407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3842,7 +914,7 @@ MonoBehaviour:
   Path: event:/Environment/Fountain
   guid: 4e9d68c99f86dc4589ad30b29285417a
   Banks:
-  - {fileID: 2108794208198847112}
+  - {fileID: -5155717665900560681}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3850,7 +922,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 44999
---- !u!114 &8367126184774708471
+--- !u!114 &3524430211770086935
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3860,20 +932,66 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Damage/PlayerBumped
+  m_Name: event:/Ennemies/Distance/ProjectileCharging
   m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Damage/PlayerBumped
-  guid: 6c27839e2bbc934a97a3fce8ad0743cb
+  Path: event:/Ennemies/Distance/ProjectileCharging
+  guid: 9963d3a75517c44c88793d7c05e2310b
   Banks:
-  - {fileID: 933712580988610575}
+  - {fileID: -2372714343079394918}
   IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4500
+--- !u!114 &3584883061365332340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/FightZone OpeningClosing
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/FightZone OpeningClosing
+  guid: c72414bfc3e238418890855e86435c68
+  Banks:
+  - {fileID: -5839401551167478480}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &3733275945468226344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Wind
+  guid: b66b9ccb245305429d9c283bba511c33
+  Banks:
+  - {fileID: -5155717665900560681}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2002
---- !u!114 &8410446213363962644
+  Length: 44987
+--- !u!114 &3759665714551564608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3883,20 +1001,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Melee/FootstepsMeleeEnnemy
+  m_Name: event:/Player/Fight/Damage/PlayerStunned
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Melee/FootstepsMeleeEnnemy
-  guid: d6589ca6996774489c89177887284020
+  Path: event:/Player/Fight/Damage/PlayerStunned
+  guid: 1cdccf352700754d85e0a4b65bac0ff3
   Banks:
-  - {fileID: -2990189344028157289}
-  IsStream: 0
-  Is3D: 1
+  - {fileID: 2073389515295880997}
+  IsStream: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &8435441258644056802
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7000
+--- !u!114 &4141059473682489904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3906,20 +1024,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/ProjectileMoving
+  m_Name: event:/Ennemies/Distance/ProjectileExplosion
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/ProjectileMoving
-  guid: 92c6fcce9188da488449db6314c41a5b
+  Path: event:/Ennemies/Distance/ProjectileExplosion
+  guid: d00a1c5dbb91b24e81153adb895a053d
   Banks:
-  - {fileID: 8316731304052781491}
+  - {fileID: -2372714343079394918}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 30440
---- !u!114 &8750878650703333589
+  Length: 4700
+--- !u!114 &4412659254753945765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3929,20 +1047,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/DropSoul
+  m_Name: event:/Ennemies/Distance/ProjectileSpit
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/DropSoul
-  guid: 606363ac7f527a4d98914474f04095b2
+  Path: event:/Ennemies/Distance/ProjectileSpit
+  guid: 6c225f12624bf84fa042f2d0abadfdab
   Banks:
-  - {fileID: 2059993264408480867}
+  - {fileID: -2372714343079394918}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3138
---- !u!114 &8991750942606070201
+  Length: 2500
+--- !u!114 &4807576992873524890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3951,21 +1069,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Distance/DistanceHint
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MeleeEnemy.bank
   m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Distance/DistanceHint
-  guid: 2f203e3536497f47b46dddfd15698f4f
-  Banks:
-  - {fileID: -7979078785788175355}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &9048104496322233078
+  Path: Assets/Asset/Fmod_Asset/Desktop/MeleeEnemy.bank
+  Name: MeleeEnemy
+  StudioPath: bank:/MeleeEnemy
+  lastModified: 637580679520000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5027337142375326994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3980,7 +1094,7 @@ MonoBehaviour:
   Path: event:/Receptacle/Quick Heal
   guid: 4d20a32943ce7e45b6d29867415e4055
   Banks:
-  - {fileID: 3510058607554497534}
+  - {fileID: 2540475420586825419}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3988,7 +1102,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &9084465208332986628
+--- !u!114 &5129292337439949229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3998,43 +1112,177 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Fight/Switch/SwitchAvailable
+  m_Name: event:/Environment/WindSafeZone
   m_EditorClassIdentifier: 
-  Path: event:/Player/Fight/Switch/SwitchAvailable
-  guid: d509592bc4c03642b2d7916505bfab33
+  Path: event:/Environment/WindSafeZone
+  guid: 2f1085834309c24badfd687c8dee1f32
   Banks:
-  - {fileID: 933712580988610575}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &9131481947927030347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Fire
-  m_EditorClassIdentifier: 
-  Path: event:/Fire
-  guid: f6d7d3fd853e0845957bb4a04a28727a
-  Banks:
-  - {fileID: 2108794208198847112}
+  - {fileID: -5155717665900560681}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 21000
---- !u!114 &9133177008010536200
+  Length: 191986
+--- !u!114 &5682948577834672204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Asset/Fmod_Asset/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637580679520000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6075349412517913382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Attack/SwordSlash1-2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Attack/SwordSlash1-2
+  guid: f261d2bcade45446b7f6bf6ee12feb1e
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
+--- !u!114 &6185696213904269440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Distance/ProjectileMoving
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Distance/ProjectileMoving
+  guid: 92c6fcce9188da488449db6314c41a5b
+  Banks:
+  - {fileID: -2372714343079394918}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30440
+--- !u!114 &6475022187648678061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameOver
+  m_EditorClassIdentifier: 
+  Path: event:/GameOver
+  guid: 7e64b71d181f8a47a80e953ce6aab080
+  Banks:
+  - {fileID: -5839401551167478480}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2594
+--- !u!114 &6589949439568254853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Attack/SwordSlash3
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Attack/SwordSlash3
+  guid: 52dcace3c5f1a046b12896773bfaca2a
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1510
+--- !u!114 &7172914935127360726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Fight/Switch/Switch
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Fight/Switch/Switch
+  guid: ac8332d55ed5eb4db7b17b2a07dfb885
+  Banks:
+  - {fileID: 2073389515295880997}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1842
+--- !u!114 &7253389034541731742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/DustFalling
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/DustFalling
+  guid: c2c4a830d3069e4ba0f13a9343484339
+  Banks:
+  - {fileID: -5155717665900560681}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3155
+--- !u!114 &7265510653033791634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4049,7 +1297,7 @@ MonoBehaviour:
   Path: event:/Ennemies/Distance/CounterProjectile
   guid: 5fc0192a88623344b11ce997d37523c6
   Banks:
-  - {fileID: -7561593790558943805}
+  - {fileID: -2372714343079394918}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4057,7 +1305,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3575
---- !u!114 &9196886274847246258
+--- !u!114 &7835989054767044938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4067,16 +1315,62 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/EnteringVegetation
+  m_Name: event:/Environment/Insects/InsectsFleeing
   m_EditorClassIdentifier: 
-  Path: event:/Environment/EnteringVegetation
-  guid: f9e2bf1f0c28334185ac390b6422be4d
+  Path: event:/Environment/Insects/InsectsFleeing
+  guid: 6a2abc9e2badeb40a6c375abaaaca7c9
   Banks:
-  - {fileID: 965667826064357240}
-  IsStream: 1
+  - {fileID: -5155717665900560681}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3500
+  Length: 1000
+--- !u!114 &8175935343458864672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Insects/ButterfliesFlyingOff
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Insects/ButterfliesFlyingOff
+  guid: 2f114c1c09d9714abef644b4cf15834b
+  Banks:
+  - {fileID: -5155717665900560681}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 959
+--- !u!114 &8299089017763689550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Melee/DeathMelee
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Melee/DeathMelee
+  guid: 71695837e75a0740acf23e37af6722ea
+  Banks:
+  - {fileID: 4807576992873524890}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
