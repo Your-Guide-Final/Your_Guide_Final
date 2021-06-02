@@ -48,5 +48,6 @@ public class ReceptacleControler : MonoBehaviour
     {
         rAnimator.SetParameterValue();
         rLife.SetLifeBareValue();
+        //rLife.SetLifeSoundParameter();
     }
 }

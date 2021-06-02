@@ -846,6 +846,7 @@ MonoBehaviour:
   attRange: 4
   bumpForce: 12
   getAdrenaline: 1
+  canBump: 0
   useConeDetection: 1
   effectiveRange: -0.5
   effectiveTimeBeforeDegat: 0.1
@@ -1193,6 +1194,7 @@ MonoBehaviour:
   attRange: 5
   bumpForce: 800
   getAdrenaline: 0
+  canBump: 1
   useConeDetection: 0
   effectiveRange: 0
   effectiveTimeBeforeDegat: 0.2
@@ -1784,6 +1786,7 @@ MonoBehaviour:
   attRange: 4
   bumpForce: 18
   getAdrenaline: 1
+  canBump: 0
   useConeDetection: 1
   effectiveRange: -0.5
   effectiveTimeBeforeDegat: 0.2
@@ -1921,6 +1924,7 @@ MonoBehaviour:
   attRange: 5
   bumpForce: 22
   getAdrenaline: 1
+  canBump: 1
   useConeDetection: 0
   effectiveRange: 0
   effectiveTimeBeforeDegat: 0.1

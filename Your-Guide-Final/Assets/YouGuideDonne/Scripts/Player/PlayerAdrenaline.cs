@@ -29,6 +29,12 @@ public class PlayerAdrenaline : MonoBehaviour
     private enum adrenalineEtat { Nothing, Switch,Heal}
     private adrenalineEtat etat;
 
+    [Header("SFX")]
+    [FMODUnity.EventRef]
+    [SerializeField] private string eventSwitchAvaible;
+    private bool alreadyFull;
+
+
     [HideInInspector]
     public float adrenalineValue;
 
@@ -40,6 +46,7 @@ public class PlayerAdrenaline : MonoBehaviour
         etat = adrenalineEtat.Nothing;
         hatMaterial = hatMeshRenderer.material;
         hatMaterial.EnableKeyword("_EmissiveIntensity");
+        alreadyFull = false;
     }
 
     public void SetJaugeFillValue()
@@ -79,6 +86,19 @@ public class PlayerAdrenaline : MonoBehaviour
 
         float IntensityValue = Mathf.Clamp(maxEmissionIntensity * pourcentageValue, minEmissionIntensity, maxEmissionIntensity);
 
+        if (IsAdrenalineMax())
+        {
+            if (!alreadyFull)
+            {
+                alreadyFull = true;
+                FMODUnity.RuntimeManager.PlayOneShot(eventSwitchAvaible, transform.position);
+            }
+        }
+        else
+        {
+            alreadyFull = false;
+        }
+
         if (canSwitch)
         {
             
@@ -86,16 +106,19 @@ public class PlayerAdrenaline : MonoBehaviour
             //Debug.Log("ColorChange");
 
             hatMaterial.SetColor("_EmissiveColor", EmissionColor.Evaluate(0) * IntensityValue);
+            
         }
         else if (canheal)
         {
-
+            
         }
         else
         {
             
             hatMaterial.SetColor("_BaseColor", EmissionColor.Evaluate(0.5f));
             hatMaterial.SetColor("_EmissiveColor", EmissionColor.Evaluate(0.5f) * IntensityValue);
+
+            
         }
 
         if (pourcentageValue < minValueToEnableHeal)

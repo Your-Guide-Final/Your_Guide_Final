@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    public Animator animator;
+    /*public Animator animator;
 
     //public UnityEditor.Animations.AnimatorController an;
 
@@ -12,12 +12,15 @@ public class test : MonoBehaviour
 
     public AnimatorOverrideController aoc;
     public AnimationClip animeClip;
-    public string testanime;
+    public string testanime;*/
+
+    public List<GameObject> liste;
 
     private void Start()
     {
-        animator.runtimeAnimatorController = aoc;
-        aoc[testanime] = animeClip;
+        //Debug.Log("List Count : " + liste.Count);
+       /* animator.runtimeAnimatorController = aoc;
+        aoc[testanime] = animeClip;*/
 
         /*AnimationClip[] clips = aoc.animationClips;
         int nb = 0;*/

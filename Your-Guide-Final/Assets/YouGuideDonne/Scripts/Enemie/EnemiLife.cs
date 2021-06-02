@@ -7,8 +7,10 @@ public class EnemiLife : LifeGestion
 {
     private EnemiControler eControler;
     [SerializeField] private Image lifeFillImage;
+    [SerializeField] private CombatGestion.ennemiType typeRespawn;
     
-    
+    [HideInInspector]
+    public CombatGestion combatGestion;
 
     private void Awake()
     {
@@ -21,6 +23,10 @@ public class EnemiLife : LifeGestion
     {
         eControler.eStatue.death = true;
         eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.deathParameterName, true);
+        if (combatGestion != null)
+        {
+            combatGestion.Respawn(typeRespawn);
+        }
     }
 
     public void SetLifeBareValue()
@@ -39,4 +45,6 @@ public class EnemiLife : LifeGestion
         base.TakeDamage(DamageValue);
         eControler.eFx.PlayDegatFx();
     }
+
+
 }
