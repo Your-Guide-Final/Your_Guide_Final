@@ -1002,8 +1002,8 @@ MonoBehaviour:
   gizmoColor: {r: 1, g: 0, b: 0, a: 1}
   gizmoSize: 0.5
   pathMinDistance: 0.5
-  vitesse: 8
-  minDistanceToFollowReceptacle: 35
+  vitesse: 6
+  minDistanceToFollowReceptacle: 30
   minDistanceToFollowPlayer: 5
   minDistanceToAttack: 3
   refreshFrequency: 0.25
