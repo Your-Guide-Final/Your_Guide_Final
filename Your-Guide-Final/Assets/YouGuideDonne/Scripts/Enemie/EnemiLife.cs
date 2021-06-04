@@ -9,7 +9,7 @@ public class EnemiLife : LifeGestion
     [SerializeField] private Image lifeFillImage;
     [SerializeField] private CombatGestion.ennemiType typeRespawn;
     
-    [HideInInspector]
+    //[HideInInspector]
     public CombatGestion combatGestion;
 
     private void Awake()
@@ -34,7 +34,7 @@ public class EnemiLife : LifeGestion
         if (lifeFillImage != null)
         {
             float fillValue = lifeValue/maxLifeValue;
-            Debug.Log(fillValue);
+            //Debug.Log(fillValue);
             lifeFillImage.fillAmount = fillValue;
 
         }

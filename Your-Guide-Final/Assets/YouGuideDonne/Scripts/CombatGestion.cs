@@ -16,8 +16,10 @@ public class CombatGestion : MonoBehaviour
 
     [SerializeField] float minRangeBetweenEnnemi;
     [SerializeField] LayerMask spawnCheckLayer;
+    [SerializeField] float timeToRespawn;
 
     [Header("Start")]
+    [SerializeField] float timeBeforeSpawn;
     [SerializeField] List<GameObject> murZoneBattle;
     [SerializeField] int nbEnnemiCacStart;
     int nbEnnemiCac;
@@ -59,10 +61,19 @@ public class CombatGestion : MonoBehaviour
 
     public void StartBattle()
     {
+        Debug.Log("StartBattle");
         onBattle = true;
         ChangeEtatMur(true);
-        StartCoroutine(SpawnEnnemi(spawnPointCac, prefabEnnemiCac, nbEnnemiCacStart));
-        StartCoroutine(SpawnEnnemi(spawnPointRange, prefabEnnemiRange, nbEnnemiRangeStart));
+        if (nbEnnemiCacStart > 0)
+        {
+            StartCoroutine(SpawnEnnemi(spawnPointCac, prefabEnnemiCac, nbEnnemiCacStart, timeBeforeSpawn));
+
+        }
+        if (nbEnnemiRangeStart > 0)
+        {
+            StartCoroutine(SpawnEnnemi(spawnPointRange, prefabEnnemiRange, nbEnnemiRangeStart, timeBeforeSpawn));
+
+        }
         nbEnnemiCac = nbEnnemiCacToKill;
         nbEnnemiRange = nbEnnemiRangeToKill;
     }
@@ -86,21 +97,27 @@ public class CombatGestion : MonoBehaviour
 
 
 
-    public IEnumerator SpawnEnnemi(List<Transform> spawnPoint,GameObject ennemiObject, int nbEnnemiToSpawn)
+    public IEnumerator SpawnEnnemi(List<Transform> spawnPoint,GameObject ennemiObject, int nbEnnemiToSpawn, float timeDecal)
     {
+        yield return new WaitForSeconds(timeDecal);
+
+        Debug.Log("StartSpawn");
+
         for (int i = 0; i < nbEnnemiToSpawn; i++)
         {
+            Debug.Log("StartCheckIfCanSpawn");
+
             int randomIndex = Random.Range(0, spawnPoint.Count);
-            while (CheckIfSpawnIsClear(spawnPoint[randomIndex]))
+            while (!CheckIfSpawnIsClear(spawnPoint[randomIndex]))
             {
                 randomIndex += 1;
-                if (randomIndex > spawnPoint.Count)
+                if (randomIndex >= spawnPoint.Count)
                 {
                     randomIndex = 0;
                 }
                 yield return new WaitForSeconds(Time.deltaTime);
             }
-
+            Debug.Log("SpawnEnnemi");
             GameObject newEnnemi =Instantiate(ennemiObject, spawnPoint[randomIndex].position, spawnPoint[randomIndex].rotation);
             newEnnemi.GetComponent<EnemiControler>().eLife.combatGestion = this;
             yield return new WaitForSeconds(Time.deltaTime);
@@ -111,13 +128,14 @@ public class CombatGestion : MonoBehaviour
 
     public void Respawn(ennemiType type)
     {
+        Debug.Log("respawn");
         switch (type)
         {
             case ennemiType.Cac:
 
                 if (nbEnnemiCac > 0)
                 {
-                    SpawnEnnemi(spawnPointCac, prefabEnnemiCac, 1);
+                    StartCoroutine(SpawnEnnemi(spawnPointCac, prefabEnnemiCac, 1, timeToRespawn));
                 }
                 nbEnnemiCac = Mathf.Clamp(nbEnnemiCac - 1, 0, nbEnnemiCacToKill);
 
@@ -127,7 +145,7 @@ public class CombatGestion : MonoBehaviour
 
                 if (nbEnnemiRange > 0)
                 {
-                    SpawnEnnemi(spawnPointRange, prefabEnnemiRange, 1);
+                    StartCoroutine(SpawnEnnemi(spawnPointRange, prefabEnnemiRange, 1, timeToRespawn));
                 }
                 nbEnnemiRange = Mathf.Clamp(nbEnnemiRange - 1, 0, nbEnnemiRangeToKill);
 
