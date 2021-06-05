@@ -15,7 +15,8 @@ public class ReceptacleLife : LifeGestion
 
     public override void Death()
     {
-        Destroy(gameObject);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        //Destroy(gameObject);
     }
 
     public void SetLifeBareValue()
