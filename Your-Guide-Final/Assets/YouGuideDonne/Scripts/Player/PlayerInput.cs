@@ -12,8 +12,9 @@ public class PlayerInput : MonoBehaviour
     [Header("Attaque Input")]
     public string attInput;
 
-    [Header("Switch Input")]
+    [Header("Adrenaline Input")]
     public string switchInput;
+    public string healInput;
 
     public float GetHorizontalInputAxis()
     {

@@ -67,19 +67,11 @@ public class PlayerAdrenaline : MonoBehaviour
         adrenalineValue = Mathf.Clamp(adrenalineValue, 0, adrenalineMaxValue);
     }
 
-    public bool canHeal()
-    {
-
-        
-
-        return false;
-    }
-
 
     public void SetFeedBack()
     {
         bool canSwitch = pControler.pSwitch.IsInRange() && IsAdrenalineMax();
-        bool canheal = canHeal();
+        bool canheal = pControler.pHeal.CanHeal();
        
 
         float pourcentageValue = adrenalineValue / adrenalineMaxValue;
@@ -110,7 +102,10 @@ public class PlayerAdrenaline : MonoBehaviour
         }
         else if (canheal)
         {
-            
+            hatMaterial.SetColor("_BaseColor", EmissionColor.Evaluate(1));
+            //Debug.Log("ColorChange");
+
+            hatMaterial.SetColor("_EmissiveColor", EmissionColor.Evaluate(1) * IntensityValue);
         }
         else
         {

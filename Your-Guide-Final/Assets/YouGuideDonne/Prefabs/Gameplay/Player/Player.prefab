@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6076705647464370365}
   - component: {fileID: 5184241589688764269}
   - component: {fileID: 8598216514473256353}
+  - component: {fileID: 1263231811885994485}
   - component: {fileID: 4058003528778094586}
   - component: {fileID: 6759614346504529619}
   m_Layer: 10
@@ -174,6 +175,7 @@ MonoBehaviour:
   Vinput: Vertical
   attInput: Fire1
   switchInput: Fire2
+  healInput: Heal
 --- !u!114 &6906553234845476458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +255,7 @@ MonoBehaviour:
   attResetTrigger: Reset_Att
   stunParameter: Stun
   switchParameter: Switch
+  healParameter: Heal
   speedParameter: Speed
 --- !u!114 &8980550955881759184
 MonoBehaviour:
@@ -417,6 +420,22 @@ MonoBehaviour:
   amplitudeMax: 10
   frequency: 5
   camBrain: {fileID: 0}
+--- !u!114 &1263231811885994485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159128464596119340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa24ce93844076488e6a7abfe8d537d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistanceToHeal: 4
+  coutAdrenaline: 30
+  healValue: 3
+  healCooldown: 2
 --- !u!114 &4058003528778094586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,6 +469,7 @@ MonoBehaviour:
   pStatue: {fileID: 0}
   pFX: {fileID: 0}
   pSFX: {fileID: 0}
+  pHeal: {fileID: 0}
   pCharacterController: {fileID: 0}
 --- !u!1 &226549538976598805
 GameObject:

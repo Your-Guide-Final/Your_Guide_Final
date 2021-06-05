@@ -17,6 +17,7 @@ public class ReceptacleAnimator : MonoBehaviour
     public string switchParametername;
     public string switchTriggerParametername;
     public string vitesseParameterName;
+    public string healParameterName;
 
     private void Awake()
     {

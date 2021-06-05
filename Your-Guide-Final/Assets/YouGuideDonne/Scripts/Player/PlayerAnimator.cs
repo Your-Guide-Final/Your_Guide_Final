@@ -13,8 +13,9 @@ public class PlayerAnimator : MonoBehaviour
     [Header("Player Statue Parameter")]
     public string stunParameter;
 
-    [Header("Switch Parameter")]
+    [Header("Adrenaline Parameter")]
     public string switchParameter;
+    public string healParameter;
 
     [Header("Movement Parameter")]
     public string speedParameter;

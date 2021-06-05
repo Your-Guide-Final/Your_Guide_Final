@@ -10,6 +10,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerStatue))]
 [RequireComponent(typeof(PlayerFX))]
 [RequireComponent(typeof(PlayerSFX))]
+[RequireComponent(typeof(PlayerHeal))]
 
 
 [RequireComponent(typeof(PlayerAnimator))]
@@ -32,6 +33,7 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public PlayerStatue pStatue;
     [HideInInspector] public PlayerFX pFX;
     [HideInInspector] public PlayerSFX pSFX;
+    [HideInInspector] public PlayerHeal pHeal;
     [HideInInspector] public CharacterController pCharacterController;
 
 
@@ -51,6 +53,7 @@ public class PlayerControler : MonoBehaviour
         pStatue = GetComponent<PlayerStatue>();
         pFX = GetComponent<PlayerFX>();
         pSFX = GetComponent<PlayerSFX>();
+        pHeal = GetComponent<PlayerHeal>();
         pCharacterController = GetComponent<CharacterController>();
     }
 
@@ -60,6 +63,7 @@ public class PlayerControler : MonoBehaviour
         pAdrenaline.SetJaugeFillValue();
         pAdrenaline.SetFeedBack();
         pMovement.Move(pInput.GetDirectionInput(), pCharacterController);
+        pHeal.CoolDown();
     }
 
     /*private void FixedUpdate()
