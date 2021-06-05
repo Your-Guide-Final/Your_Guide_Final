@@ -113,7 +113,7 @@ MonoBehaviour:
   gizmoSize: 0.5
   pathMinDistance: 0.5
   vitesse: 6
-  minDistanceToFollowReceptacle: 25
+  minDistanceToFollowReceptacle: 50
   minDistanceToFollowPlayer: 0
   minDistanceToAttack: 20
   refreshFrequency: 0.25
@@ -171,6 +171,8 @@ MonoBehaviour:
   initialLifeValue: 4
   godMode: 0
   lifeFillImage: {fileID: 4945757369566741143}
+  typeRespawn: 0
+  combatGestion: {fileID: 0}
 --- !u!114 &5125474590457499682
 MonoBehaviour:
   m_ObjectHideFlags: 0
