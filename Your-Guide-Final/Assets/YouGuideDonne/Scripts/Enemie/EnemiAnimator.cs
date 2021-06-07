@@ -15,6 +15,7 @@ public class EnemiAnimator : MonoBehaviour
     public string attParameterName = "att";
     public string deathParameterName = "Death";
     public string speedParameterName = "Speed";
+    public string attackTypearameterName = "AttackType";
 
 
     private void Awake()

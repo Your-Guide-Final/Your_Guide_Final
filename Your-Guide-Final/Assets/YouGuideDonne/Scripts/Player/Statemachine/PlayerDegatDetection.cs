@@ -9,27 +9,30 @@ public class PlayerDegatDetection : StateMachineBehaviour
 
 
     [Header("Degat Parameter")]
-    public int degatValue;
-    public float attRange;
-    public float bumpForce;
-    public bool getAdrenaline;
-    public bool canBump;
+    [SerializeField] int degatValue;
+    [SerializeField] float attRange;
+    [SerializeField] bool getAdrenaline;
+
+    [Header("Bump")]
+    [SerializeField] bool canBump;
+    [SerializeField] float timeBump;
+    [SerializeField] float bumpForce;
 
     [Header("HitBox Parameter")]
-    public bool useConeDetection;
-    public float effectiveRange;
+    [SerializeField] bool useConeDetection;
+    [SerializeField] float effectiveRange;
 
     [Header("Timing")]
-    public float effectiveTimeBeforeDegat;
+    [SerializeField] float effectiveTimeBeforeDegat;
 
     [Header("FX")]
-    public PlayerFX.typeOfAttack typeOfAttack;
+    [SerializeField] PlayerFX.typeOfAttack typeOfAttack;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         pControler = FindObjectOfType<PlayerControler>();
-        pControler.pAttaque.StartDamageCoroutine( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce, typeOfAttack, getAdrenaline,canBump);
+        pControler.pAttaque.StartDamageCoroutine(effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce, typeOfAttack, getAdrenaline, canBump, timeBump);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

@@ -7,6 +7,7 @@ public class EnemiLife : LifeGestion
 {
     private EnemiControler eControler;
     [SerializeField] private Image lifeFillImage;
+    [SerializeField] private GameObject lifeBarGameObject;
     [SerializeField] private CombatGestion.ennemiType typeRespawn;
     
     //[HideInInspector]
@@ -33,11 +34,25 @@ public class EnemiLife : LifeGestion
     {
         if (lifeFillImage != null)
         {
+            if (LifeIsMax() && lifeBarGameObject.activeSelf)
+            {
+                lifeBarGameObject.SetActive(false);
+            }
+            else if(!LifeIsMax() && !lifeBarGameObject.activeSelf)
+            {
+                lifeBarGameObject.SetActive(true);
+            }
             float fillValue = lifeValue/maxLifeValue;
             //Debug.Log(fillValue);
             lifeFillImage.fillAmount = fillValue;
 
         }
+    }
+
+    public bool LifeIsMax()
+    {
+        bool lifeMax = lifeValue == maxLifeValue;
+        return lifeMax;
     }
 
     public override void TakeDamage(int DamageValue)

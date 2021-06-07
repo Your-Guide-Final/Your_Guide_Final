@@ -18,13 +18,26 @@ public class EnemiAttack : MonoBehaviour
 
     public LayerMask colliderAttackLayer;
 
+    bool AttackType;
+
     private void Awake()
     {
         eControler = transform.GetComponent<EnemiControler>();
+        float random = Random.Range(0,1);
+        if (random < 0.5)
+        {
+            AttackType = false;
+        }
+        else
+        {
+            AttackType = true;
+
+        }
     }
 
     public void DegatCone(int degat, float rangeAtt, float effectiveRange, float knockBackForce)
     {
+        AttackType = !AttackType;
         Collider[] colliderEntities = Physics.OverlapSphere(origineAtt.position, rangeAtt, colliderAttackLayer);
 
         foreach (Collider cible in colliderEntities)
