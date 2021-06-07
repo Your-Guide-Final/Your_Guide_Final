@@ -885,12 +885,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 1
-  attRange: 4
-  bumpForce: 12
+  attRange: 5
   getAdrenaline: 1
-  canBump: 0
+  canBump: 1
+  timeBump: 0.4
+  bumpForce: 12
   useConeDetection: 1
-  effectiveRange: -0.5
+  effectiveRange: -0.6
   effectiveTimeBeforeDegat: 0.1
   typeOfAttack: 0
 --- !u!1102 &-5032788426620246602
@@ -1261,10 +1262,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 4
-  attRange: 5
-  bumpForce: 800
+  attRange: 7
   getAdrenaline: 0
   canBump: 1
+  timeBump: 0
+  bumpForce: 50
   useConeDetection: 0
   effectiveRange: 0
   effectiveTimeBeforeDegat: 0.2
@@ -1935,12 +1937,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 1
-  attRange: 4
-  bumpForce: 18
+  attRange: 5
   getAdrenaline: 1
-  canBump: 0
+  canBump: 1
+  timeBump: 0.4
+  bumpForce: 18
   useConeDetection: 1
-  effectiveRange: -0.5
+  effectiveRange: -0.6
   effectiveTimeBeforeDegat: 0.2
   typeOfAttack: 1
 --- !u!114 &-135529178549307797
@@ -1971,61 +1974,61 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Reset_Att
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stun
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Bump
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Switch
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Speed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SpeedX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SpeedY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Debug
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Heal
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Attaque_Layer
@@ -2079,10 +2082,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 2
-  attRange: 5
-  bumpForce: 22
+  attRange: 6
   getAdrenaline: 1
   canBump: 1
+  timeBump: 1
+  bumpForce: 22
   useConeDetection: 0
   effectiveRange: 0
   effectiveTimeBeforeDegat: 0.1

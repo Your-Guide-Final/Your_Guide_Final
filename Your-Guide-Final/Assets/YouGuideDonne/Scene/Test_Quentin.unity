@@ -1145,64 +1145,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &116132621
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116132624}
-  - component: {fileID: 116132623}
-  - component: {fileID: 116132622}
-  m_Layer: 0
-  m_Name: CombatTigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &116132622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116132621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 156d368eac7a42b47821fe4f97e8206a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combatGestion: {fileID: 0}
---- !u!65 &116132623
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116132621}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &116132624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116132621}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 3.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137048917
 GameObject:
   m_ObjectHideFlags: 0
@@ -11639,64 +11581,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1556412822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1556412824}
-  - component: {fileID: 1556412823}
-  m_Layer: 0
-  m_Name: combatFGestion
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1556412823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556412822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 990a45523b994f84ba64cea01e28b717, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabEnnemiCac: {fileID: 0}
-  prefabEnnemiRange: {fileID: 0}
-  spawnPointCac: []
-  spawnPointRange: []
-  minRangeBetweenEnnemi: 0
-  spawnCheckLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  timeToRespawn: 0
-  timeBeforeSpawn: 0
-  murZoneBattle: []
-  nbEnnemiCacStart: 0
-  nbEnnemiRangeStart: 0
-  nbEnnemiCacToKill: 0
-  nbEnnemiRangeToKill: 0
---- !u!4 &1556412824
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556412822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1558613444
 GameObject:
   m_ObjectHideFlags: 0
@@ -16546,7 +16430,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2526965554077630820, guid: f09bd30be0651504180a1052b34d5506, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2526965554077630820, guid: f09bd30be0651504180a1052b34d5506, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16606,7 +16490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5305670030945650290, guid: f09bd30be0651504180a1052b34d5506, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5305670030945650290, guid: f09bd30be0651504180a1052b34d5506, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16642,7 +16526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9013693943646334546, guid: f09bd30be0651504180a1052b34d5506, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f09bd30be0651504180a1052b34d5506, type: 3}
@@ -17413,11 +17297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6564983434699289996, guid: 77d5f147a15d0e3429c828cac2a5bbcf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.646982
+      value: 18.646978
       objectReference: {fileID: 0}
     - target: {fileID: 6564983434699289996, guid: 77d5f147a15d0e3429c828cac2a5bbcf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.331831
+      value: -10.33183
       objectReference: {fileID: 0}
     - target: {fileID: 6634657798678844464, guid: 77d5f147a15d0e3429c828cac2a5bbcf, type: 3}
       propertyPath: decalValue
