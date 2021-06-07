@@ -3637,83 +3637,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2855032856032919771, guid: 9b625829b41651d4ca9f32d337e39c7e, type: 3}
   m_PrefabInstance: {fileID: 1393453860}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1394514812
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_RootOrder
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8256515874174429324, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dd98b2fcc43d6564aa59a007b15c1008, type: 2}
-    - target: {fileID: -4970493934287278521, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dd98b2fcc43d6564aa59a007b15c1008, type: 2}
-    - target: {fileID: -4970493934287278521, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: e9e6aaa6577e57144bacdb1196cdbdf9, type: 2}
-    - target: {fileID: 919132149155446097, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_Name
-      value: Recep_Model_Final
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412277171188372167, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dd98b2fcc43d6564aa59a007b15c1008, type: 2}
-    - target: {fileID: 8868417701331324290, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dd98b2fcc43d6564aa59a007b15c1008, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccf6036d797038c42a9908382d79b84b, type: 3}
 --- !u!1001 &1415891462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8217,8 +8140,6 @@ MonoBehaviour:
   initialLifeValue: 4
   godMode: 0
   lifeFillImage: {fileID: 0}
-  typeRespawn: 0
-  combatGestion: {fileID: 0}
 --- !u!95 &2235713382464674374
 Animator:
   serializedVersion: 3
@@ -9621,8 +9542,6 @@ MonoBehaviour:
   initialLifeValue: 2
   godMode: 0
   lifeFillImage: {fileID: 9140391245962782666}
-  typeRespawn: 0
-  combatGestion: {fileID: 0}
 --- !u!82 &4460817428591044256
 AudioSource:
   m_ObjectHideFlags: 0
