@@ -149,8 +149,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1971957603202134101}
-  - {fileID: -7835613982035958091}
+  - {fileID: -7228911949644356511}
+  - {fileID: 3925849876310720445}
   MinDistance: 0
   MaxDistance: 0
   Length: 144000
@@ -173,7 +173,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7574014075963863575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +220,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &-7228911949644356511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7100139640480985859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +364,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Fight.bank
   Name: Fight
   StudioPath: bank:/Fight
-  lastModified: 637584967406329251
+  lastModified: 637586586710357307
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -449,7 +469,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Ambiant.bank
   Name: Ambiant
   StudioPath: bank:/Ambiant
-  lastModified: 637584967406119052
+  lastModified: 637586586692042197
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -614,7 +634,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/DistanceEnnemy.bank
   Name: DistanceEnnemy
   StudioPath: bank:/DistanceEnnemy
-  lastModified: 637584967406289213
+  lastModified: 637586586707709646
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -633,11 +653,11 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637584967406349267
+  lastModified: 637586586710457022
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 3608
+    Value: 3654
   Exists: 1
 --- !u!114 &-2033011136559704585
 MonoBehaviour:
@@ -678,7 +698,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1881788096848541214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,13 +1012,14 @@ MonoBehaviour:
   - {fileID: -1780153449700949454}
   - {fileID: -7089480648970932904}
   - {fileID: 2663929763034777965}
+  - {fileID: 9212757922915684094}
   EditorParameters:
   - {fileID: -4771997102357744810}
   MasterBanks:
   - {fileID: 5682948577834672204}
   StringsBanks:
   - {fileID: -2036970203843597879}
-  stringsBankWriteTime: 637584967406349267
+  stringsBankWriteTime: 637586586710457022
   cacheVersion: 6
 --- !u!114 &134453813565311904
 MonoBehaviour:
@@ -1086,6 +1107,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1359713756876426015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Life
+  m_EditorClassIdentifier: 
+  Name: Life
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &1508031369772741965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,7 +1205,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Character.bank
   Name: Character
   StudioPath: bank:/Character
-  lastModified: 637584967406189121
+  lastModified: 637586586701641326
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1206,7 +1247,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Receptacle.bank
   Name: Receptacle
   StudioPath: bank:/Receptacle
-  lastModified: 637584967406519423
+  lastModified: 637586586720163443
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1299,6 +1340,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 29400
+--- !u!114 &3098894935167983027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &3378894829300404407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1414,6 +1475,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7000
+--- !u!114 &3925849876310720445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Life
+  m_EditorClassIdentifier: 
+  Name: Life
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &4141059473682489904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1556,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/MeleeEnemy.bank
   Name: MeleeEnemy
   StudioPath: bank:/MeleeEnemy
-  lastModified: 637584967406459363
+  lastModified: 637586586714321809
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1560,7 +1641,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637584967406339260
+  lastModified: 637586586710417140
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1854,3 +1935,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
+--- !u!114 &9212757922915684094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/EnnemyHIT
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/EnnemyHIT
+  guid: a24ae1c0f8f33a48a7beee3578a5e03c
+  Banks:
+  - {fileID: -5839401551167478480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1485
