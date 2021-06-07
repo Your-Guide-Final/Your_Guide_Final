@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    [SerializeField]private Animator playerAnimator;
+    public Animator playerAnimator;
 
     [Header("Attaque Parameter")]
     public string attTrigger;
@@ -12,10 +12,12 @@ public class PlayerAnimator : MonoBehaviour
 
     [Header("Player Statue Parameter")]
     public string stunParameter;
+    public string bumpParameter;
 
     [Header("Adrenaline Parameter")]
     public string switchParameter;
     public string healParameter;
+    public string onHealParameter;
 
     [Header("Movement Parameter")]
     public string speedParameter;

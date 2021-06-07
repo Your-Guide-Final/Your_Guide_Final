@@ -8,6 +8,8 @@ public class EnemiProjectile : MonoBehaviour
     public Rigidbody rigid;
     public float timeStunPlayer;
 
+    [SerializeField] GameObject explosionImpact;
+
     private void OnCollisionEnter(Collision collision)
     {
         ReceptacleControler rControler = collision.transform.GetComponent<ReceptacleControler>();
@@ -34,8 +36,13 @@ public class EnemiProjectile : MonoBehaviour
             }
         }
 
+        GameObject explosion = Instantiate(explosionImpact, transform.position, transform.rotation);
+        Destroy(explosion, 3f);
         Destroy(gameObject);
     }
+
+
+    
 
     public void BumpRicochet(float force)
     {

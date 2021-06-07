@@ -13,6 +13,7 @@ public class ReceptacleLife : LifeGestion
     [SerializeField] string lifeGlobalParaName;
 
 
+
     public override void Death()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
@@ -33,6 +34,12 @@ public class ReceptacleLife : LifeGestion
     {
         float parameterValue = lifeValue / maxLifeValue;
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName(lifeGlobalParaName, parameterValue);
+    }
+
+    public bool IsLifeMax()
+    {
+        bool lifeIsMax = lifeValue == maxLifeValue;
+        return lifeIsMax;
     }
 
 }

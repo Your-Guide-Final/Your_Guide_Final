@@ -38,7 +38,9 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 moveDirec=Vector3.zero;
 
-        if (directionMove.magnitude > minValueToMove && pControler.pStatue.canMove)
+        bool canMove = pControler.pStatue.canMove && !pControler.pStatue.stun && !pControler.pStatue.bump;
+
+        if (directionMove.magnitude > minValueToMove && canMove)
         {
             timer = Mathf.Clamp(timer + Time.deltaTime, 0, accelerationDuration * directionMove.magnitude);
             /*Vector3 moveDirection = directionMove.normalized;
@@ -134,4 +136,19 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log("rootMotionOff");
     }
 
+    public IEnumerator BumpMovement(Vector3 bump, float bumpTime)
+    {
+        float bumpTimer = 0;
+        while (bumpTimer < bumpTime)
+        {
+            pControler.pCharacterController.SimpleMove(bump * Time.deltaTime);
+            timer += Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+    }
+
+    public void StartBumpMovement(Vector3 bump, float bumpTime)
+    {
+        StartCoroutine(BumpMovement(bump, bumpTime));
+    }
 }

@@ -236,7 +236,6 @@ MonoBehaviour:
   origineAttCone: {fileID: 5542566808085591619}
   origineAttImpact: {fileID: 7898895888179427723}
   attKnockBackUpModifier: 1
-  timeBumpEnemi: 1
   adrenalineGain: 10
 --- !u!114 &3047396202139740842
 MonoBehaviour:
@@ -254,8 +253,10 @@ MonoBehaviour:
   attTrigger: Att
   attResetTrigger: Reset_Att
   stunParameter: Stun
+  bumpParameter: Bump
   switchParameter: Switch
   healParameter: Heal
+  onHealParameter: OnHeal
   speedParameter: Speed
 --- !u!114 &8980550955881759184
 MonoBehaviour:
@@ -432,10 +433,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa24ce93844076488e6a7abfe8d537d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healValue: 1
+  timeBetweenHeal: 0.2
   maxDistanceToHeal: 4
-  coutAdrenaline: 30
-  healValue: 3
-  healCooldown: 2
+  coutAdrenalineFor1HealValue: 10
+  minAdrenalineValueToHeal: 30
 --- !u!114 &4058003528778094586
 MonoBehaviour:
   m_ObjectHideFlags: 0
