@@ -40,7 +40,9 @@ public class PlayerStatue : MonoBehaviour
     public IEnumerator SetStun(float timeStun)
     {
         stun = true;
+        pControler.pAnimator.playerAnimator.SetBool(pControler.pAnimator.stunParameter, true);
         yield return new WaitForSeconds(timeStun);
+        pControler.pAnimator.playerAnimator.SetBool(pControler.pAnimator.stunParameter, false);
         stun = false;
     }
 
@@ -55,8 +57,10 @@ public class PlayerStatue : MonoBehaviour
     public IEnumerator SetBump(Vector3 bumpForce, float timeBump)
     {
         bump = true;
-        //pControler.rigid.AddForce(bumpForce);
+        pControler.pAnimator.playerAnimator.SetBool(pControler.pAnimator.bumpParameter, true);
+        pControler.pMovement.StartBumpMovement(bumpForce, timeBump);
         yield return new WaitForSeconds(timeBump);
+        pControler.pAnimator.playerAnimator.SetBool(pControler.pAnimator.bumpParameter, false);
         bump = false; 
     }
 

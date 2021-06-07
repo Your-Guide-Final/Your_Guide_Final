@@ -286,6 +286,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
+--- !u!114 &-6670044125684840548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/EnnemyHIT
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/EnnemyHIT
+  guid: a24ae1c0f8f33a48a7beee3578a5e03c
+  Banks:
+  - {fileID: -5839401551167478480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1485
 --- !u!114 &-6547306411654842262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +387,7 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Fight.bank
   Name: Fight
   StudioPath: bank:/Fight
-  lastModified: 637580527022140090
+  lastModified: 637586592077297634
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -673,11 +696,11 @@ MonoBehaviour:
   Path: Assets/Asset/Fmod_Asset/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637580527022150068
+  lastModified: 637586592077876097
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 3608
+    Value: 3654
   Exists: 1
 --- !u!114 &-2033011136559704585
 MonoBehaviour:
@@ -1032,13 +1055,13 @@ MonoBehaviour:
   - {fileID: -1780153449700949454}
   - {fileID: -7089480648970932904}
   - {fileID: 2663929763034777965}
-  EditorParameters:
-  - {fileID: -4771997102357744810}
+  - {fileID: -6670044125684840548}
+  EditorParameters: []
   MasterBanks:
   - {fileID: 5682948577834672204}
   StringsBanks:
   - {fileID: -2036970203843597879}
-  stringsBankWriteTime: 637580527022150068
+  stringsBankWriteTime: 637586592077876097
   cacheVersion: 6
 --- !u!114 &134453813565311904
 MonoBehaviour:

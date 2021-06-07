@@ -7,6 +7,8 @@ public class EnemiAttRange : StateMachineBehaviour
     private EnemiControler eControler;
     private EnnemiAttRangeStat eAttStats;
 
+    [SerializeField] float timeDelay;
+
     //float timer = 0;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -15,7 +17,7 @@ public class EnemiAttRange : StateMachineBehaviour
         eControler = animator.transform.GetComponent<EnemiRefControler>().eControler;
         eAttStats = eControler.transform.GetComponent<EnnemiAttRangeStat>();
         eAttStats.arme.LookAt(eControler.eMovement.currentTarget.position + eAttStats.targetOffset);
-        eAttStats.SpawnProjectile();
+        eAttStats.StartSpawnCoroutine(timeDelay);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

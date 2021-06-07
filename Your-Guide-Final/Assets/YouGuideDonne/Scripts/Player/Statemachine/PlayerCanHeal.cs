@@ -28,13 +28,14 @@ public class PlayerCanHeal : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        bool canTrigger = pControler.pHeal.CanHeal() && getIsOnTime(stateInfo);
+        bool canTrigger = pControler.pHeal.CanHeal() && pControler.pHeal.EnoughAdrenalineToStartHeal() && getIsOnTime(stateInfo);
 
         if (Input.GetButtonDown(pControler.pInput.healInput) && canTrigger && canHeal)
         {
             canHeal = false;
             
             animator.SetTrigger(pControler.pAnimator.healParameter);
+            animator.SetBool(pControler.pAnimator.onHealParameter, true);
         }
     }
 

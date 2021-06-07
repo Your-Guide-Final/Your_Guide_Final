@@ -34,6 +34,16 @@ public class EnnemiAttRangeStat : MonoBehaviour
 
     }
 
+    public IEnumerator SpawnProjectileWithDelay(float timeDelay)
+    {
+        yield return new WaitForSeconds(timeDelay);
+        SpawnProjectile();
+    }
+
+    public void StartSpawnCoroutine(float timeDelay)
+    {
+        StartCoroutine(SpawnProjectileWithDelay(timeDelay));
+    }
 
 
 }
