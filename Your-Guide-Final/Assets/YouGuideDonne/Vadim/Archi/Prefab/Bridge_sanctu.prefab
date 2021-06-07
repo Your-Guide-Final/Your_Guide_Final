@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6201678167791722403}
   - component: {fileID: 7043369210613485574}
   - component: {fileID: 5069898363145200844}
+  - component: {fileID: 7386536482022311830}
   m_Layer: 0
   m_Name: Bridge_sanctu
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: df01ccebbc776dc4bb97a6141d5548dd, type: 2}
-  - {fileID: 2100000, guid: 664827dd4e47b8e4ba36551daec9f5dd, type: 2}
+  - {fileID: 2100000, guid: a3780d77699300c41a35bf2fb1ae81fc, type: 2}
   - {fileID: 9180892828007318148, guid: c40cf8e0bf6eafc4e92a84bbf037a148, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7386536482022311830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726998793989195033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.607557, y: 3.1340065, z: 40.00002}
+  m_Center: {x: 0.0000019073485, y: 1.5670033, z: -20.000008}

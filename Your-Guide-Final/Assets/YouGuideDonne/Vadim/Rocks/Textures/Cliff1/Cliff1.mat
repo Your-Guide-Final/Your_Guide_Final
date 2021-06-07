@@ -17,12 +17,11 @@ Material:
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
-  - DistortionVectors
+  - RayTracingPrepass
   - MOTIONVECTORS
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - RayTracingPrepass
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -148,11 +147,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_101D7C7F: 0
-    - Vector1_95F86C55: 1.2
-    - Vector1_B325CEEC: 268.72
+    - Vector1_95F86C55: 0.2
+    - Vector1_B325CEEC: 249.8
     - Vector1_B82CE8C4: 0.3
-    - Vector1_E3E81014: 44.2
-    - Vector1_FCB2B388: 1
+    - Vector1_E3E81014: 100
+    - Vector1_FCB2B388: 0.09
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -237,6 +236,8 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
     - _SSRefractionProjectionModel: 0
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
