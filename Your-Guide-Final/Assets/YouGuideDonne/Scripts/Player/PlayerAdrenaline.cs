@@ -11,13 +11,16 @@ public class PlayerAdrenaline : MonoBehaviour
     [Header("Adrenaline")]
     [SerializeField] private float adrenalineStartValue;
     [SerializeField] private float adrenalineMaxValue;
+    [SerializeField] private float minValueToEnableHeal;
 
 
     [Header("UI")]
-    [SerializeField] private Image jaugeFillImage;
+    [SerializeField] private Slider jaugeFillSlider;
     [SerializeField] private Animator jaugeAnimator;
     [SerializeField] private string parameterJaugeName;
-    [SerializeField] private float minValueToEnableHeal;
+    [SerializeField] private float minValueToEnableAnimeGauge;
+    [SerializeField] private float maxValueToDisableAnimeGauge;
+    [SerializeField] private float timeValueToLerpFill;
 
     [Header("Sign/Feedback")]
     [SerializeField] private SkinnedMeshRenderer hatMeshRenderer;
@@ -52,7 +55,7 @@ public class PlayerAdrenaline : MonoBehaviour
     public void SetJaugeFillValue()
     {
         float fillAmount = adrenalineValue / adrenalineMaxValue;
-        jaugeFillImage.fillAmount = fillAmount;
+        jaugeFillSlider.value = Mathf.Lerp(jaugeFillSlider.value,fillAmount,timeValueToLerpFill*Time.deltaTime);
     }
 
     public bool IsAdrenalineMax()

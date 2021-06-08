@@ -289,10 +289,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adrenalineStartValue: 0
   adrenalineMaxValue: 100
-  jaugeFillImage: {fileID: 0}
+  minValueToEnableHeal: 0.3
+  jaugeFillSlider: {fileID: 0}
   jaugeAnimator: {fileID: 0}
   parameterJaugeName: jaugeValue
-  minValueToEnableHeal: 0.3
+  minValueToEnableAnimeGauge: 0
+  maxValueToDisableAnimeGauge: 0
+  timeValueToLerpFill: 1
   hatMeshRenderer: {fileID: 4890933487350397885}
   EmissionColor:
     serializedVersion: 2
