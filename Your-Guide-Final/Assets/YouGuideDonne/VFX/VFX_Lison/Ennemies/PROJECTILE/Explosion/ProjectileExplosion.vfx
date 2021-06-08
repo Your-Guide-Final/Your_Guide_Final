@@ -18,14 +18,14 @@ MonoBehaviour:
   - name: FloorAcid
     collapsed: 1
   - name: Smoke
-    collapsed: 1
-  - name: Splaters
     collapsed: 0
+  - name: Splaters
+    collapsed: 1
   uiBounds:
     serializedVersion: 2
     x: -1727
     y: -185
-    width: 7000
+    width: 6266
     height: 2996
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -77,13 +77,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615164}
   - {fileID: 8926484042661615229}
   - {fileID: 8926484042661615243}
-  - {fileID: 8926484042661615266}
-  - {fileID: 8926484042661615277}
   - {fileID: 8926484042661615471}
-  - {fileID: 8926484042661615633}
-  - {fileID: 8926484042661615638}
-  - {fileID: 8926484042661615649}
-  - {fileID: 8926484042661615651}
   - {fileID: 8926484042661615690}
   - {fileID: 8926484042661615692}
   - {fileID: 8926484042661615694}
@@ -121,34 +115,6 @@ MonoBehaviour:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
       m_SerializableObject: 0
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: New float
-    path: New float
-    tooltip: 
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: New float 1
-    path: New float 1
-    tooltip: 
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1.5
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -272,7 +238,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 4
+      m_SerializableObject: 0.05
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -286,7 +252,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 3
+      m_SerializableObject: 1.5
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -404,6 +370,34 @@ MonoBehaviour:
     descendantCount: 0
   - name: SplatersSize
     path: SplatersSize
+    tooltip: 
+    sheetType: m_Float
+    realType: Single
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 1.5
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: Splaters2SizeMin
+    path: Splaters2SizeMin
+    tooltip: 
+    sheetType: m_Float
+    realType: Single
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 1
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: Splaters2SizeMax
+    path: Splaters2SizeMax
     tooltip: 
     sheetType: m_Float
     realType: Single
@@ -6924,7 +6918,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 0
+  m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -11367,7 +11361,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614958}
   m_OutputSlots: []
   m_Label: 
-  m_Data: {fileID: 8926484042661615677}
+  m_Data: {fileID: 0}
   m_InputFlowSlot:
   - link: []
   m_OutputFlowSlot:
@@ -17229,7 +17223,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"position":{"x":0.0,"y":0.5,"z":0.0}}'
+      m_SerializableObject: '{"position":{"x":0.0,"y":1.0,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: Position
@@ -17560,7 +17554,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661615777}
 --- !u!114 &8926484042661615236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17985,7 +17980,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661615787}
 --- !u!114 &8926484042661615249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18019,7 +18015,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661615789}
 --- !u!114 &8926484042661615250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19342,7 +19339,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615472}
   m_ExposedName: SplatersColor
   m_Exposed: 1
-  m_Order: 8
+  m_Order: 10
   m_Category: Splaters
   m_Min:
     m_Type:
@@ -20769,14 +20766,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966674976}
+  m_Parent: {fileID: 0}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
   title: 
-  m_Owners:
-  - {fileID: 8926484042661614957}
+  m_Owners: []
   dataType: 0
   capacity: 128
   stripCapacity: 1
@@ -21598,7 +21594,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -21652,7 +21648,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 3
+      m_SerializableObject: 1.5
     m_Space: 2147483647
   m_Property:
     name: o
@@ -21678,7 +21674,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -21732,7 +21728,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 4
+      m_SerializableObject: 0.05
     m_Space: 2147483647
   m_Property:
     name: o
@@ -22117,7 +22113,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615765}
   m_ExposedName: SplatersYposition
   m_Exposed: 1
-  m_Order: 4
+  m_Order: 6
   m_Category: Splaters
   m_Min:
     m_Type:
@@ -22197,7 +22193,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615770}
   m_ExposedName: SplatersSpeedMin
   m_Exposed: 1
-  m_Order: 5
+  m_Order: 7
   m_Category: Splaters
   m_Min:
     m_Type:
@@ -22277,7 +22273,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615772}
   m_ExposedName: SplatersSpeedMax
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 8
   m_Category: Splaters
   m_Min:
     m_Type:
@@ -22357,7 +22353,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615777}
   m_ExposedName: SplatersFrameRate
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 9
   m_Category: Splaters
   m_Min:
     m_Type:
@@ -22377,6 +22373,13 @@ MonoBehaviour:
     - outputSlot: {fileID: 8926484042661615777}
       inputSlot: {fileID: 8926484042661615118}
     position: {x: 2855, y: 1736}
+    expandedSlots: []
+    expanded: 0
+  - m_Id: 1
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661615777}
+      inputSlot: {fileID: 8926484042661615235}
+    position: {x: 3892, y: 1740}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661615777
@@ -22414,6 +22417,7 @@ MonoBehaviour:
   m_Direction: 1
   m_LinkedSlots:
   - {fileID: 8926484042661615118}
+  - {fileID: 8926484042661615235}
 --- !u!114 &8926484042661615786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22435,10 +22439,10 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661615787}
-  m_ExposedName: New float
+  m_ExposedName: Splaters2SizeMin
   m_Exposed: 1
-  m_Order: 9
-  m_Category: 
+  m_Order: 4
+  m_Category: Splaters
   m_Min:
     m_Type:
       m_SerializableType: 
@@ -22453,8 +22457,10 @@ MonoBehaviour:
   m_Tooltip: 
   m_Nodes:
   - m_Id: 0
-    linkedSlots: []
-    position: {x: 3904, y: 728}
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661615787}
+      inputSlot: {fileID: 8926484042661615248}
+    position: {x: 3898, y: 731}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661615787
@@ -22490,7 +22496,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661615248}
 --- !u!114 &8926484042661615788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22512,10 +22519,10 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661615789}
-  m_ExposedName: New float 1
+  m_ExposedName: Splaters2SizeMax
   m_Exposed: 1
-  m_Order: 10
-  m_Category: 
+  m_Order: 5
+  m_Category: Splaters
   m_Min:
     m_Type:
       m_SerializableType: 
@@ -22530,8 +22537,10 @@ MonoBehaviour:
   m_Tooltip: 
   m_Nodes:
   - m_Id: 0
-    linkedSlots: []
-    position: {x: 3905, y: 829}
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661615789}
+      inputSlot: {fileID: 8926484042661615249}
+    position: {x: 3895, y: 781}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661615789
@@ -22567,4 +22576,5 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661615249}
