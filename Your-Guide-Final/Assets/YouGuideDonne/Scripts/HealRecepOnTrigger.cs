@@ -6,6 +6,9 @@ public class HealRecepOnTrigger : MonoBehaviour
 {
     bool alreadyTrigger;
 
+    [FMODUnity.EventRef]
+    [SerializeField] private string eventHealSfxName;
+
     private void Awake()
     {
         alreadyTrigger = false;
@@ -21,6 +24,7 @@ public class HealRecepOnTrigger : MonoBehaviour
             {
                 rControler.rLife.TakeDamage(-Mathf.RoundToInt(rControler.rLife.maxLifeValue));
                 alreadyTrigger = true;
+                FMODUnity.RuntimeManager.PlayOneShot(eventHealSfxName, rControler.transform.position);
             }
         }
     }

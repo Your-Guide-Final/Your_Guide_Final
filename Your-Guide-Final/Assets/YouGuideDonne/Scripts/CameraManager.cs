@@ -12,6 +12,8 @@ public class CameraManager : MonoBehaviour
     [SerializeField] int camPriorityOff = 0;
     [SerializeField] int camPriorityOn = 1;
 
+    public CinemachineTargetGroup targetGroupCombat;
+
     private void Awake()
     {
         ChangeActifCamera(activeCameraIndex);

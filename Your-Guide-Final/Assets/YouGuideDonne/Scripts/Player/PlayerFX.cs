@@ -20,6 +20,17 @@ public class PlayerFX : MonoBehaviour
     [SerializeField] private VisualEffect attack3Impact;
     [SerializeField] private VisualEffect switchFX;
 
+    [Header("Heal VFX")]
+    [SerializeField] private VisualEffect canHealSign;
+    [SerializeField] private VisualEffect healZone;
+    [SerializeField] private VisualEffect healParticule;
+    [SerializeField] private string healStartEvent;
+    [SerializeField] private string healStopEvent;
+    [SerializeField] private string healSignAliveEvent;
+
+    bool healSignOn;
+
+
     [Header("Mouvement")]
     [SerializeField] private ParticleSystem walkParticule;
     public float maxParticuleEmissionRate;
@@ -39,6 +50,7 @@ public class PlayerFX : MonoBehaviour
     private void Awake()
     {
         pControler = transform.GetComponent<PlayerControler>();
+        healSignOn = false;
 
     }
 
@@ -97,28 +109,7 @@ public class PlayerFX : MonoBehaviour
         emission.rateOverTime = newEmission;
     }
 
-    /* public void startFXDegat(typeOfAttack type, Vector3 position)
-     {
-         switch (type)
-         {
-             case typeOfAttack.Attack1:
-                 attack1.SetVector3(positionDegatParameterName, position);
-                 attack1.SendEvent(degatEventName);
-
-                 break;
-
-             case typeOfAttack.Attack2:
-                 attack2.SetVector3(positionDegatParameterName, position);
-                 attack2.SendEvent(degatEventName);
-
-                 break;
-
-             case typeOfAttack.Switch:
-                 awitch.SetVector3(positionDegatParameterName, position);
-                 Switch.SendEvent(degatEventName);
-                 break;
-         }
-     }*/
+    
 
     public void StartCameraShake(float ratio, float timeDelay)
     {
@@ -150,6 +141,43 @@ public class PlayerFX : MonoBehaviour
 
         //Reset shake values
         p.m_AmplitudeGain = 0f;
+    }
+
+    public void SetCanHealSignFx()
+    {
+        bool canHeal = pControler.pHeal.CanHeal();
+        Debug.Log("Fx CanHeal " + canHeal);
+
+        if(canHeal && !healSignOn)
+        {
+            Debug.Log("Fx Canheal On");
+            //canHealSign.SetBool(healSignAliveEvent, true);
+            canHealSign.SendEvent(healStartEvent);
+            healSignOn = true;
+        }
+        else
+        {
+            if (!canHeal && healSignOn)
+            {
+                Debug.Log("Fx Canheal Off"); 
+                //canHealSign.SetBool(healSignAliveEvent, false);
+                canHealSign.SendEvent(healStopEvent);
+            }
+        }
+    }
+
+    public void PlayHealFx()
+    {
+        healZone.gameObject.SetActive(true);
+        healZone.SendEvent(healStartEvent);
+        healParticule.SendEvent(healStartEvent);
+    }
+
+    public void StopHealFx()
+    {
+        healZone.gameObject.SetActive(false);
+        healZone.SendEvent(healStopEvent);
+        healParticule.SendEvent(healStopEvent);
     }
 
 }

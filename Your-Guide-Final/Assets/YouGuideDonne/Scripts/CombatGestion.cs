@@ -50,6 +50,8 @@ public class CombatGestion : MonoBehaviour
     int currentWaveIndex;
     int nbEnemiKilled;
 
+    CameraManager camManager;
+
     private void Awake()
     {
         ChangeEtatMur(false);
@@ -57,6 +59,7 @@ public class CombatGestion : MonoBehaviour
         currentWaveIndex = 0;
         nbEnemiKilled=0;
         nbEnemi = 0;
+        camManager = FindObjectOfType<CameraManager>();
     }
 
     private void Update()
@@ -105,12 +108,15 @@ public class CombatGestion : MonoBehaviour
 
         nbEnemi += waves[currentWaveIndex].nbEnemiCac + waves[currentWaveIndex].nbEnemiRange;
 
+        camManager.ChangeActifCamera(2);
+
     }
 
     public void EndBattle()
     {
         onBattle = false;
         ChangeEtatMur(false);
+        camManager.ChangeActifCamera(0);
     }
 
     public void ChangeEtatMur(bool etat)
@@ -149,6 +155,7 @@ public class CombatGestion : MonoBehaviour
             //Debug.Log("SpawnEnnemi");
             GameObject newEnnemi = Instantiate(ennemiObject, spawnPoint[randomIndex].position, spawnPoint[randomIndex].rotation);
             newEnnemi.GetComponent<EnemiControler>().eLife.combatGestion = this;
+            camManager.targetGroupCombat.AddMember(newEnnemi.transform, 1, 1);
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
@@ -182,11 +189,13 @@ public class CombatGestion : MonoBehaviour
     }
 
 
-    public void AnEnemiWasKill()
+    public void AnEnemiWasKill(Transform eTransform)
     {
         nbEnemi --;
         nbEnemiKilled ++;
+        camManager.targetGroupCombat.RemoveMember(eTransform);
     }
+
 
 
 

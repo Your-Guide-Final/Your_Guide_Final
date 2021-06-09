@@ -11,15 +11,16 @@ public class PlayerAdrenaline : MonoBehaviour
     [Header("Adrenaline")]
     [SerializeField] private float adrenalineStartValue;
     [SerializeField] private float adrenalineMaxValue;
-    [SerializeField] private float minValueToEnableHeal;
 
 
     [Header("UI")]
     [SerializeField] private Slider jaugeFillSlider;
     [SerializeField] private Animator jaugeAnimator;
     [SerializeField] private string parameterJaugeName;
+    [SerializeField] private float minValueToEnableHealAnime;
     [SerializeField] private float minValueToEnableAnimeGauge;
     [SerializeField] private float maxValueToDisableAnimeGauge;
+    [SerializeField] private GameObject animeGaugeGameObject;
     [SerializeField] private float timeValueToLerpFill;
 
     [Header("Sign/Feedback")]
@@ -119,7 +120,7 @@ public class PlayerAdrenaline : MonoBehaviour
             
         }
 
-        if (pourcentageValue < minValueToEnableHeal)
+        if (pourcentageValue < minValueToEnableHealAnime)
         {
             jaugeAnimator.SetFloat(parameterJaugeName, 0);
         }
@@ -130,6 +131,19 @@ public class PlayerAdrenaline : MonoBehaviour
         else
         {
             jaugeAnimator.SetFloat(parameterJaugeName, 2);
+        }
+
+        if (pourcentageValue < minValueToEnableAnimeGauge)
+        {
+            animeGaugeGameObject.SetActive(false);
+        }
+        else if (pourcentageValue < maxValueToDisableAnimeGauge)
+        {
+            animeGaugeGameObject.SetActive(true);
+        }
+        else
+        {
+            animeGaugeGameObject.SetActive(false);
         }
 
     }

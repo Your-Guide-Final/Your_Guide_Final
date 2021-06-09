@@ -213,9 +213,9 @@ MonoBehaviour:
   spawnPoint: {fileID: 7830692552390119546}
   projectile: {fileID: 7200997632670164994, guid: 37fa40f0851a6644dab36806de2901f5, type: 3}
   vitesseProjectile: 15
-  aimFx: {fileID: 0}
-  startAim: 
-  stopAim: 
+  aimFx: {fileID: 4764585997471663131}
+  startAim: StartAim
+  stopAim: StopAim
   endPosPropertyNameAim: EndPosition
   timeCharge: 2
   chargeAnimatorParameter: Charge
@@ -1355,6 +1355,8 @@ GameObject:
   - component: {fileID: 7228781240165912020}
   - component: {fileID: 5150328858599631549}
   - component: {fileID: 4952348798762920963}
+  - component: {fileID: 6950584507538687714}
+  - component: {fileID: 4084951077049152285}
   m_Layer: 12
   m_Name: BloopSplatter
   m_TagString: Untagged
@@ -1396,7 +1398,10 @@ VisualEffect:
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 13.5, y: 1, z: 11.5}
+        m_Name: SpawnPosition
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -1453,6 +1458,37 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6950584507538687714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6682800916995487739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 4084951077049152285}
+  m_VisualEffect: {fileID: 5150328858599631549}
+--- !u!114 &4084951077049152285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6682800916995487739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c3070554d0a8944a95ff8f018c2c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: SpawnPosition
+  Target: {fileID: 7228781240165912020}
 --- !u!1 &7239378074270293525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,14 +1762,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e6548796af5b95a48ab95c96c070de80, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
---- !u!4 &2733200156485904349 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
-  m_PrefabInstance: {fileID: 2478385464128503862}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3361259424073268583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
+  m_PrefabInstance: {fileID: 2478385464128503862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2733200156485904349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
   m_PrefabInstance: {fileID: 2478385464128503862}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5700567797153291923

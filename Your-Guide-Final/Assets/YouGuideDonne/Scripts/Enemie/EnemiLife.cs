@@ -27,7 +27,7 @@ public class EnemiLife : LifeGestion
         eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.deathParameterName, true);
         if (combatGestion != null)
         {
-            combatGestion.AnEnemiWasKill();
+            combatGestion.AnEnemiWasKill(transform);
         }
     }
 
