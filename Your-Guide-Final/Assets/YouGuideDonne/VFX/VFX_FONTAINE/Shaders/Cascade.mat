@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Cascade
-  m_Shader: {fileID: -6465566751694194690, guid: 12a480e4104f99a4a8bf182cab91d578, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 6d417688847577c44839e2c9558eca16, type: 3}
   m_ShaderKeywords: _DISABLE_DECALS _DISABLE_SSR_TRANSPARENT _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
     _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -76,6 +76,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_0055be0e5d9e428ea802de9b5c567b2b_Texture_1:
+        m_Texture: {fileID: 2800000, guid: f1c55c085c924544097ea7b54641c84a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_064a1328b97b4bc2bf79dbb972d7f50c_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 779ae81bc32016648bf18d14f273b56d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -96,12 +104,15 @@ Material:
     - Vector1_10A1FD61: 1
     - Vector1_16E7052E: -5.26
     - Vector1_1ECE7B20: 0.04
+    - Vector1_48d4da04c8934982ba8bc8889431767d: 2
+    - Vector1_55d6c55a172d424190a7e777c93e94d0: 0.2
     - Vector1_56AF4237: 3.5
     - Vector1_5D22A629: -0.26
     - Vector1_6F2EF37: 2
     - Vector1_6F805B47: 4
     - Vector1_7E652FDE: 2
     - Vector1_7E830DCB: 0.5
+    - Vector1_8eeb6b1997c4403c9a34d8c0557a11e1: 0.75
     - Vector1_95282CFB: 6.06
     - Vector1_9A93FBDC: 0.2
     - Vector1_AE5E7895: 0.9
@@ -113,6 +124,7 @@ Material:
     - Vector1_E3BEAD0E: 1.88
     - Vector1_EC7C6879: 0.7
     - Vector1_F8707CA6: 0.5
+    - Vector1_b2491cd93d7b4b038e75e8cdc0128569: 0.05
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaCutoffEnable: 0

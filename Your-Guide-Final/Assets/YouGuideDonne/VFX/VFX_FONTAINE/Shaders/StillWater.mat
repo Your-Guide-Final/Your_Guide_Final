@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StillWater
-  m_Shader: {fileID: -6465566751694194690, guid: 4d00038ffedfeec4bb7d961aa8f5f69c, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 7685f32ed5d14aa48ab7c6a381b188e0, type: 3}
   m_ShaderKeywords: _DISABLE_DECALS _DISABLE_SSR_TRANSPARENT _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
     _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -87,6 +87,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5cf45e63255947538a407d0d66821f18_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 779ae81bc32016648bf18d14f273b56d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -124,21 +128,30 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_10A1FD61: 1
     - Vector1_1ECE7B20: 0.12
+    - Vector1_343fc25ad8344f1480d0fa022c3f880e: 0.25
     - Vector1_3E51BEAC: 0.1
+    - Vector1_445a26949b074db0b711495dafaacec7: 0.05
     - Vector1_488F29C0: 1
     - Vector1_56AF4237: 1
     - Vector1_5D22A629: -0.26
+    - Vector1_685fc66cf07649f28579b4f303718f72: 0.5
     - Vector1_6F2EF37: 150
     - Vector1_6F805B47: 1
+    - Vector1_7E830DCB: 1
+    - Vector1_98f1604870bd44b7bd20132ce08efca6: 0
     - Vector1_9A93FBDC: 0.2
     - Vector1_B9B7FDB7: 1
     - Vector1_C886F512: 11
     - Vector1_C95E09F: 1
+    - Vector1_D1950FBD: 0.5
     - Vector1_D1F4C393: 0.56
     - Vector1_DDC0CD52: 0.1
     - Vector1_E3BEAD0E: 0
     - Vector1_EC7C6879: 0.7
+    - Vector1_F8707CA6: 0.5
+    - Vector1_a916de015d924a4ab4240a2de7adf5de: 1
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
