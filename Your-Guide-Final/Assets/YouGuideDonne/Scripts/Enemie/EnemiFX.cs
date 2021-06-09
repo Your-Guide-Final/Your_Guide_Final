@@ -15,6 +15,8 @@ public class EnemiFX : MonoBehaviour
     [Header("TakeDamage")]
     [SerializeField] private VisualEffect degatFX;
     [SerializeField] private string eventDegatName;
+    [SerializeField] private VisualEffect bloodSplatter;
+    [SerializeField] private string eventBloodSplatterName;
 
 
 
@@ -44,6 +46,7 @@ public class EnemiFX : MonoBehaviour
     public void PlayDegatFx()
     {
         degatFX.SendEvent(eventDegatName);
+        bloodSplatter.SendEvent(eventBloodSplatterName);
     }
 
 }

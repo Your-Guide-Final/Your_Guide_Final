@@ -8,6 +8,7 @@ public class EnemiLife : LifeGestion
     private EnemiControler eControler;
     [SerializeField] private Image lifeFillImage;
     [SerializeField] private GameObject lifeBarGameObject;
+    [SerializeField] private float speedMoveLifebar;
     [SerializeField] private CombatGestion.ennemiType typeRespawn;
     
     //[HideInInspector]
@@ -44,7 +45,7 @@ public class EnemiLife : LifeGestion
             }
             float fillValue = lifeValue/maxLifeValue;
             //Debug.Log(fillValue);
-            lifeFillImage.fillAmount = fillValue;
+            lifeFillImage.fillAmount = Mathf.Lerp(lifeFillImage.fillAmount, fillValue, speedMoveLifebar * Time.deltaTime);
 
         }
     }

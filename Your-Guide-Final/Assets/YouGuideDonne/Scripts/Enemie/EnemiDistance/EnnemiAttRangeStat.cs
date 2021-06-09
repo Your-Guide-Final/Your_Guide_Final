@@ -1,16 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class EnnemiAttRangeStat : MonoBehaviour
 {
     private EnemiControler eControler;
 
-     public float attaqueCooldown;
+    [Header("Attaque")]
+    public float attaqueCooldown;
     [SerializeField] private Transform spawnPoint;
 
     [SerializeField] private GameObject projectile;
     [SerializeField] private float vitesseProjectile;
+
+    [Header("Fx")]
+    [SerializeField] private VisualEffect aimFx;
+    [SerializeField] private string startAim;
+    [SerializeField] private string stopAim;
+    [SerializeField] private string endPosPropertyNameAim;
+
+    [Header("Charge")]
+    public float timeCharge;
+    public string chargeAnimatorParameter;
 
     public Vector3 targetOffset;
 
@@ -45,5 +57,23 @@ public class EnnemiAttRangeStat : MonoBehaviour
         StartCoroutine(SpawnProjectileWithDelay(timeDelay));
     }
 
+    public void StartCharge()
+    {
+        aimFx.SendEvent(startAim);
+        aimFx.SetVector3(endPosPropertyNameAim, eControler.eMovement.currentTarget.position);
+    }
+
+    public void GetAim()
+    {
+        Transform target = eControler.eMovement.currentTarget;
+        arme.LookAt(eControler.eMovement.currentTarget.position + targetOffset);
+        aimFx.SetVector3(endPosPropertyNameAim, target.position);
+    }
+
+    public void StopCharge()
+    {
+        aimFx.SendEvent(stopAim);
+
+    }
 
 }

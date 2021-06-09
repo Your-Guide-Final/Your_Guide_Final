@@ -7,7 +7,9 @@ using FMOD;
 public class ReceptacleLife : LifeGestion
 {
     private ReceptacleControler rControler;
+    [Header("UI")]
     [SerializeField] private Image lifeBarFill;
+    [SerializeField] private float speedMoveLifebar;
 
     [FMODUnity.ParamRef]
     [SerializeField] string lifeGlobalParaName;
@@ -25,7 +27,7 @@ public class ReceptacleLife : LifeGestion
         if (lifeBarFill != null)
         {
             float fillValue = lifeValue / maxLifeValue;
-            lifeBarFill.fillAmount = fillValue;
+            lifeBarFill.fillAmount = Mathf.Lerp(lifeBarFill.fillAmount, fillValue, speedMoveLifebar);
 
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class LifeGestion : MonoBehaviour
 {
 
-    [SerializeField] protected float maxLifeValue;
+    public float maxLifeValue;
     [SerializeField] protected float initialLifeValue;
     public bool godMode = false;
     protected float lifeValue;
