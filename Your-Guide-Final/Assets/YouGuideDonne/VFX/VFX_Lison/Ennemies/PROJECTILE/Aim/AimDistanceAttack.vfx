@@ -128,7 +128,7 @@ MonoBehaviour:
     x: 1688
     y: -462
     width: 7435
-    height: 2649
+    height: 2669
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_ImportDependencies: []
   m_GraphVersion: 6
   m_ResourceVersion: 1
-  m_saved: 1
+  m_saved: 0
   m_SubgraphDependencies:
   - {fileID: 5371698745253816930, guid: dba0806e5c0077049ad506da67f81498, type: 3}
   - {fileID: 5371698745253816930, guid: ba25064a5b32c4841a5549c53c7ad237, type: 3}
@@ -671,7 +671,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614661}
   m_ExposedName: EndPosition
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 4
   m_Category: 
   m_Min:
     m_Type:
@@ -3462,7 +3462,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661614913}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: StartAim
 --- !u!114 &8926484042661615042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4061,7 +4061,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615148}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: StartAim
 --- !u!114 &8926484042661615139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6648,7 +6648,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615290}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: StartAim
 --- !u!114 &8926484042661615289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7499,7 +7499,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615356}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: StartAim
 --- !u!114 &8926484042661615347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10336,7 +10336,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615453}
   m_ExposedName: LifetimeCharge
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 1
   m_Category: Aura
   m_Min:
     m_Type:
@@ -11589,7 +11589,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615496}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: StartAim
 --- !u!114 &8926484042661615495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13565,7 +13565,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615496}
       slotIndex: 1
-  eventName: OnStop
+  eventName: StopAim
 --- !u!114 &8926484042661615586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13611,7 +13611,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615594}
   m_ExposedName: LifeTimeMin
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 9
   m_Category: AimSniperStuff
   m_Min:
     m_Type:
@@ -13691,7 +13691,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615596}
   m_ExposedName: LifeTimeMax
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 8
   m_Category: AimSniperStuff
   m_Min:
     m_Type:
@@ -13771,7 +13771,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615601}
   m_ExposedName: ParticleSize
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 5
   m_Category: AimSniperStuff
   m_Min:
     m_Type:
@@ -13851,7 +13851,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615603}
   m_ExposedName: ColorOverLife
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 2
   m_Category: AimSniperStuff
   m_Min:
     m_Type:
@@ -14159,7 +14159,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615615}
   m_ExposedName: Size
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 6
   m_Category: Aura
   m_Min:
     m_Type:
@@ -14255,7 +14255,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615623}
   m_ExposedName: MeshSize
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 3
   m_Category: MeshTrails
   m_Min:
     m_Type:
@@ -14335,7 +14335,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615625}
   m_ExposedName: MeshLifetime
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 7
   m_Category: MeshTrails
   m_Min:
     m_Type:
