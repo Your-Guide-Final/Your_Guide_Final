@@ -19,10 +19,10 @@ MonoBehaviour:
     collapsed: 1
   uiBounds:
     serializedVersion: 2
-    x: 369
+    x: 529
     y: -392
-    width: 1632
-    height: 2094
+    width: 1472
+    height: 2111
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -940,7 +940,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661614555}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: Start
 --- !u!114 &8926484042661614616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,7 +2546,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615466}
       slotIndex: 0
-  eventName: OnDieRange
+  eventName: Stop
 --- !u!114 &8926484042661615465
 MonoBehaviour:
   m_ObjectHideFlags: 0

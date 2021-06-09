@@ -24,7 +24,7 @@ MonoBehaviour:
     x: 53
     y: -447
     width: 3942
-    height: 2116
+    height: 2125
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1964,7 +1964,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661614684}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: Start
 --- !u!114 &8926484042661614692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3393,7 +3393,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661614732}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: Start
 --- !u!114 &8926484042661614740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18796,7 +18796,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615407}
       slotIndex: 0
-  eventName: OnDie
+  eventName: Stop
 --- !u!114 &8926484042661615404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20722,7 +20722,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 8926484042661615478}
       slotIndex: 0
-  eventName: OnDie
+  eventName: Stop
 --- !u!114 &8926484042661615486
 MonoBehaviour:
   m_ObjectHideFlags: 0
