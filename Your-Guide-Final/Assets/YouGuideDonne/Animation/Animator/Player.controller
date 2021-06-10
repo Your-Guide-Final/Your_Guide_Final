@@ -888,7 +888,7 @@ MonoBehaviour:
   attRange: 5
   getAdrenaline: 1
   canBump: 1
-  timeBump: 0.4
+  timeBump: 0.6
   bumpForce: 12
   useConeDetection: 1
   effectiveRange: -0.6
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed00efcdf882064da06af0ee3209aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  degatValue: 4
+  degatValue: 999
   attRange: 7
   getAdrenaline: 0
   canBump: 1
@@ -1940,7 +1940,7 @@ MonoBehaviour:
   attRange: 5
   getAdrenaline: 1
   canBump: 1
-  timeBump: 0.4
+  timeBump: 0.8
   bumpForce: 18
   useConeDetection: 1
   effectiveRange: -0.6
@@ -1974,67 +1974,67 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Reset_Att
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stun
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Bump
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Switch
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Speed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SpeedX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SpeedY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Debug
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Heal
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: OnHeal
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Attaque_Layer
@@ -2091,7 +2091,7 @@ MonoBehaviour:
   attRange: 6
   getAdrenaline: 1
   canBump: 1
-  timeBump: 1
+  timeBump: 2
   bumpForce: 22
   useConeDetection: 0
   effectiveRange: 0
