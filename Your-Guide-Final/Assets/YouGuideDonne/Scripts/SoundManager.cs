@@ -29,11 +29,14 @@ public class SoundManager : MonoBehaviour
         battleParameterId = battleParameterDescription.id;
 
         eIntance.start();
+
     }
 
     public void StartBattleMusic()
     {
         eIntance.setParameterByID(battleParameterId, onBattleSoundParameterValue);
+        Debug.Log("Start Battle Music");
+        //Debug.Log(battleParameterId.data1);
     }
 
     public void StopBattleMusic()

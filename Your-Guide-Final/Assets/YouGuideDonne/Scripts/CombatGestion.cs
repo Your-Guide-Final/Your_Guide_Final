@@ -97,7 +97,7 @@ public class CombatGestion : MonoBehaviour
 
     public void StartBattle()
     {
-        Debug.Log("StartBattle");
+        //Debug.Log("StartBattle");
         onBattle = true;
         ChangeEtatMur(true);
 

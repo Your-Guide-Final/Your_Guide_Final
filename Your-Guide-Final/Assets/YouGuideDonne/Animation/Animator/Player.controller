@@ -1264,7 +1264,7 @@ MonoBehaviour:
   degatValue: 999
   attRange: 7
   getAdrenaline: 0
-  canBump: 1
+  canBump: 0
   timeBump: 0
   bumpForce: 50
   useConeDetection: 0
@@ -3320,7 +3320,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ae32b48249817849846c80dd69638b7, type: 3}
   m_Name: 
@@ -3381,7 +3381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e95805376fdf402438abf5f683b73004, type: 3}
   m_Name: 

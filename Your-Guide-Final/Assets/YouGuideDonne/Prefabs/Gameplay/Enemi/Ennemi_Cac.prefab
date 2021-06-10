@@ -1740,6 +1740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_Aura
       objectReference: {fileID: 0}
+    - target: {fileID: 6259610954701168644, guid: 2bc16eb9f199bb448b142e2b96e8c439, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6259610954701168647, guid: 2bc16eb9f199bb448b142e2b96e8c439, type: 3}
       propertyPath: m_RootOrder
       value: 3
