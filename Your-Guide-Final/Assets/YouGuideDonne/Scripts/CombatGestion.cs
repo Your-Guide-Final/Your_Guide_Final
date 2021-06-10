@@ -38,6 +38,9 @@ public class CombatGestion : MonoBehaviour
     [Header("Start")]
     [SerializeField] float timeBeforeFirstWave;
     [SerializeField] List<GameObject> murZoneBattle;
+
+    
+
     
     int nbEnnemiCac;
     
@@ -51,6 +54,7 @@ public class CombatGestion : MonoBehaviour
     int nbEnemiKilled;
 
     CameraManager camManager;
+    SoundManager soundManager;
 
     private void Awake()
     {
@@ -60,6 +64,8 @@ public class CombatGestion : MonoBehaviour
         nbEnemiKilled=0;
         nbEnemi = 0;
         camManager = FindObjectOfType<CameraManager>();
+        soundManager = FindObjectOfType<SoundManager>();
+        
     }
 
     private void Update()
@@ -109,6 +115,7 @@ public class CombatGestion : MonoBehaviour
         nbEnemi += waves[currentWaveIndex].nbEnemiCac + waves[currentWaveIndex].nbEnemiRange;
 
         camManager.ChangeActifCamera(2);
+        soundManager.StartBattleMusic();
 
     }
 
@@ -117,6 +124,7 @@ public class CombatGestion : MonoBehaviour
         onBattle = false;
         ChangeEtatMur(false);
         camManager.ChangeActifCamera(0);
+        soundManager.StopBattleMusic();
     }
 
     public void ChangeEtatMur(bool etat)
