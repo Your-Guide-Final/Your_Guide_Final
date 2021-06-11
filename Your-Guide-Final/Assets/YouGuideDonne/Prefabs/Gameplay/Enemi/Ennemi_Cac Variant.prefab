@@ -27,6 +27,14 @@ PrefabInstance:
       propertyPath: godMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2882777850298303172, guid: f09bd30be0651504180a1052b34d5506, type: 3}
+      propertyPath: maxLifeValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882777850298303172, guid: f09bd30be0651504180a1052b34d5506, type: 3}
+      propertyPath: initialLifeValue
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4692868914616454549, guid: f09bd30be0651504180a1052b34d5506, type: 3}
       propertyPath: m_RootOrder
       value: 0
