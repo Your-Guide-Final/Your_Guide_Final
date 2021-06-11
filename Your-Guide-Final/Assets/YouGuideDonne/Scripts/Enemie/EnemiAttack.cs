@@ -62,7 +62,8 @@ public class EnemiAttack : MonoBehaviour
                     PlayerControler pControler = cible.GetComponent<PlayerControler>();
                     if (pControler != null)
                     {
-                        pControler.pStatue.Bump(knockBackDirection, timeBumpPlayer);
+                        //pControler.pStatue.Bump(knockBackDirection, timeBumpPlayer);
+                        pControler.pStatue.Stun(timeBumpPlayer);
                         //eControler.eFx.StartFxDegat(pControler.transform.position);
                     }
                 }

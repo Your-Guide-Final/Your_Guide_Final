@@ -27,6 +27,7 @@ public class PlayerFX : MonoBehaviour
     [SerializeField] private string healStartEvent;
     [SerializeField] private string healStopEvent;
     [SerializeField] private string healSignAliveEvent;
+    [SerializeField] private string healAliveEvent;
 
     bool healSignOn;
 
@@ -146,12 +147,12 @@ public class PlayerFX : MonoBehaviour
     public void SetCanHealSignFx()
     {
         bool canHeal = pControler.pHeal.CanHeal();
-        Debug.Log("Fx CanHeal " + canHeal);
+        //Debug.Log("Fx CanHeal " + canHeal);
 
         if(canHeal && !healSignOn)
         {
-            Debug.Log("Fx Canheal On");
-            //canHealSign.SetBool(healSignAliveEvent, true);
+            //Debug.Log("Fx Canheal On");
+            canHealSign.SetBool(healSignAliveEvent, true);
             canHealSign.SendEvent(healStartEvent);
             healSignOn = true;
         }
@@ -159,23 +160,26 @@ public class PlayerFX : MonoBehaviour
         {
             if (!canHeal && healSignOn)
             {
-                Debug.Log("Fx Canheal Off"); 
-                //canHealSign.SetBool(healSignAliveEvent, false);
+                //Debug.Log("Fx Canheal Off"); 
+                canHealSign.SetBool(healSignAliveEvent, false);
                 canHealSign.SendEvent(healStopEvent);
+                healSignOn = false;
             }
         }
     }
 
     public void PlayHealFx()
     {
-        healZone.gameObject.SetActive(true);
+        //healZone.gameObject.SetActive(true);
+        healZone.SetBool(healAliveEvent, true);
         healZone.SendEvent(healStartEvent);
         healParticule.SendEvent(healStartEvent);
     }
 
     public void StopHealFx()
     {
-        healZone.gameObject.SetActive(false);
+        //healZone.gameObject.SetActive(false);
+        healZone.SetBool(healAliveEvent, false);
         healZone.SendEvent(healStopEvent);
         healParticule.SendEvent(healStopEvent);
     }

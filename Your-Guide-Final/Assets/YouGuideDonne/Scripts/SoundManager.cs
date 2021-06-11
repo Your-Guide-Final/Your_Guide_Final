@@ -16,7 +16,8 @@ public class SoundManager : MonoBehaviour
 
     FMOD.Studio.EventInstance eIntance;
     FMOD.Studio.PARAMETER_ID battleParameterId;
-
+    FMOD.Studio.PARAMETER_ID lifeParameterId;
+    
     private void Awake()
     {
         eIntance = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
@@ -25,8 +26,14 @@ public class SoundManager : MonoBehaviour
 
         FMOD.Studio.PARAMETER_DESCRIPTION battleParameterDescription;
         battleEventDescription.getParameterDescriptionByName(soundBattleParameter, out battleParameterDescription);
-
+        
         battleParameterId = battleParameterDescription.id;
+        
+        FMOD.Studio.PARAMETER_DESCRIPTION lifeParameterDescription;
+        battleEventDescription.getParameterDescriptionByName(soundLifeParameter, out lifeParameterDescription);
+
+        lifeParameterId = lifeParameterDescription.id;
+
 
         eIntance.start();
 
@@ -35,13 +42,24 @@ public class SoundManager : MonoBehaviour
     public void StartBattleMusic()
     {
         eIntance.setParameterByID(battleParameterId, onBattleSoundParameterValue);
-        Debug.Log("Start Battle Music");
+       
+        //eIntance.getParameterByID(battleParameterId, out cancer);
+        //Debug.Log("Start Battle Music " + cancer);
         //Debug.Log(battleParameterId.data1);
     }
 
     public void StopBattleMusic()
     {
         eIntance.setParameterByID(battleParameterId, offBattleSoundParameterValue);
+        //Debug.Log("Stop Battle Music " + cancer);
+    }
+
+    public void SetLifeMusicValue(float value)
+    {
+        float cancer;
+        eIntance.setParameterByID(lifeParameterId, value);
+        eIntance.getParameterByID(battleParameterId, out cancer);
+        Debug.Log("Life Value Music : " + cancer);
     }
 
 }

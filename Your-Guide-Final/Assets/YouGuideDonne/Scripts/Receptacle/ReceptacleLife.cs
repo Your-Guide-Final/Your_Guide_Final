@@ -16,6 +16,11 @@ public class ReceptacleLife : LifeGestion
 
 
 
+    public void Initialiaze()
+    {
+        rControler = transform.GetComponent<ReceptacleControler>();
+    }
+
     public override void Death()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
@@ -34,8 +39,9 @@ public class ReceptacleLife : LifeGestion
 
     public void SetLifeSoundParameter()
     {
+        
         float parameterValue = lifeValue / maxLifeValue;
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName(lifeGlobalParaName, parameterValue);
+        rControler.soundManager.SetLifeMusicValue(parameterValue);
     }
 
     public bool IsLifeMax()

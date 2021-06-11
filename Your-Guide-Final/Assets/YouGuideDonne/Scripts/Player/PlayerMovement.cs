@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             //Debug.Log(moveDirec);
             
         }
-        else if (!pControler.pStatue.onRootMotion)
+        else if (!pControler.pStatue.onRootMotion && !pControler.pStatue.bump)
         {
             timer = 0;
             moveDirec = Vector3.zero;
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             rigid.velocity = velocity;*/
         }
 
-        if (charaController.enabled)
+        if (charaController.enabled && !pControler.pStatue.bump && !pControler.pStatue.stun)
         {
             charaController.SimpleMove(moveDirec);
 
@@ -139,12 +139,14 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator BumpMovement(Vector3 bump, float bumpTime)
     {
         float bumpTimer = 0;
+        //pControler.pStatue.bump = true;
         while (bumpTimer < bumpTime)
         {
             pControler.pCharacterController.SimpleMove(bump * Time.deltaTime);
             timer += Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
+        //pControler.pStatue.bump = false;
     }
 
     public void StartBumpMovement(Vector3 bump, float bumpTime)

@@ -31,6 +31,8 @@ public class ReceptacleControler : MonoBehaviour
     [HideInInspector] public ReceptacleFX rFX;
     [HideInInspector] public Rigidbody rigid;
 
+     public SoundManager soundManager;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -38,9 +40,12 @@ public class ReceptacleControler : MonoBehaviour
         rAnimator = transform.GetComponent<ReceptacleAnimator>();
         rStatue = transform.GetComponent<ReceptacleStatue>();
         rLife = transform.GetComponent<ReceptacleLife>();
+        rLife.Initialiaze();
         rSFX = transform.GetComponent<ReceptacleSFX>();
         rFX = transform.GetComponent<ReceptacleFX>();
         rigid = transform.GetComponent<Rigidbody>();
+
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -48,6 +53,7 @@ public class ReceptacleControler : MonoBehaviour
     {
         rAnimator.SetParameterValue();
         rLife.SetLifeBareValue();
+        rLife.SetLifeSoundParameter();
         //rLife.SetLifeSoundParameter();
     }
 }

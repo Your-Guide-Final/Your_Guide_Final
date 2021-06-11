@@ -375,6 +375,7 @@ MonoBehaviour:
   healStartEvent: Start
   healStopEvent: Stop
   healSignAliveEvent: RangeAlive
+  healAliveEvent: Alive
   walkParticule: {fileID: 924144476457015633}
   maxParticuleEmissionRate: 20
   particuleEmissionOverAcceleration:

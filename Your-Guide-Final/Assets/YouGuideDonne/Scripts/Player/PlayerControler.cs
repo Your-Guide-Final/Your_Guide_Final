@@ -63,7 +63,7 @@ public class PlayerControler : MonoBehaviour
         pAdrenaline.SetJaugeFillValue();
         pAdrenaline.SetFeedBack();
         pMovement.Move(pInput.GetDirectionInput(), pCharacterController);
-        //pFX.SetCanHealSignFx();
+        pFX.SetCanHealSignFx();
         //pHeal.CoolDown();
     }
 
