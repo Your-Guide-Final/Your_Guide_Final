@@ -256,6 +256,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8023193555101998944, guid: 847969446cc6d424690d4c115474adfc, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 100103876376464836}
+    - target: {fileID: 8110268162396141859, guid: 847969446cc6d424690d4c115474adfc, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8110268162396141859, guid: 847969446cc6d424690d4c115474adfc, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
+      value: -0.36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 847969446cc6d424690d4c115474adfc, type: 3}
 --- !u!4 &725403943327368180 stripped
@@ -272,11 +284,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7218473941546654869, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.201
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7218473941546654871, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
       propertyPath: m_Time
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218473941546654871, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
+      propertyPath: m_RendererPriority
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7218473941546654871, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
       propertyPath: m_MinVertexDistance
@@ -381,6 +397,22 @@ PrefabInstance:
     - target: {fileID: 7218473941934800090, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218473941934800091, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218473941934800091, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Name
+      value: size
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218473941934800091, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218473941934800091, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Overridden
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a40e4fe4df022c8469ebbb33ed3a49d1, type: 3}
