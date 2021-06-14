@@ -38,6 +38,7 @@ public class EnemiAttack : MonoBehaviour
     public void DegatCone(int degat, float rangeAtt, float effectiveRange, float knockBackForce)
     {
         AttackType = !AttackType;
+        eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.attackTypearameterName, AttackType);
         Collider[] colliderEntities = Physics.OverlapSphere(origineAtt.position, rangeAtt, colliderAttackLayer);
 
         foreach (Collider cible in colliderEntities)

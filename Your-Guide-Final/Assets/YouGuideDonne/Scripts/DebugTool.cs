@@ -11,18 +11,26 @@ public class DebugTool : MonoBehaviour
     [SerializeField] string activeBarInput = "alt";
     [Space]
     [SerializeField] string resetSceneInput = "f1";
-    [SerializeField] string loadMenuInput = "f7";
+    [SerializeField] string loadMenuInput = "f10";
     [Space]
     [SerializeField] string healReceptacleInput = "f2";
     [SerializeField] string damageReceptacleInput = "f3";
     [SerializeField] string godModeOnOffInput = "f4";
+    [SerializeField] string tpReceptacle = "f5";
     [Space]
-    [SerializeField] string adrenalineUpInput = "f5";
+    //[SerializeField] string adrenalineUpInput = "f5";
     [SerializeField] string adrenalineMaxInput = "f6";
     [SerializeField] string adrenalineInfiniInput = "f7";
+    [Space]
+    [SerializeField] string stopCombat = "f8";
+    [Space]
+    [SerializeField] List<string> tpInput;
 
     [Header("Scene")]
     [SerializeField] string menuName;
+
+    [Header("PointToTP")]
+
 
     [Header("UI")]
     [SerializeField] GameObject debugUI;
