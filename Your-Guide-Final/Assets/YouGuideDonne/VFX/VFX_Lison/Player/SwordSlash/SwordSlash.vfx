@@ -95,7 +95,7 @@ MonoBehaviour:
     x: -933
     y: -1746
     width: 3931
-    height: 3764
+    height: 3742
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_ImportDependencies: []
   m_GraphVersion: 6
   m_ResourceVersion: 1
-  m_saved: 1
+  m_saved: 0
   m_SubgraphDependencies:
   - {fileID: 5371698745253816930, guid: dba0806e5c0077049ad506da67f81498, type: 3}
   m_CategoryPath: 
@@ -2676,7 +2676,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":16.0,"b":6.752960205078125,"a":1.0}'
+      m_SerializableObject: '{"r":0.0,"g":1.0,"b":0.42408376932144167,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Color_661DC53B
@@ -2994,7 +2994,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":19.827451705932618,"g":47.937255859375,"b":0.0,"a":1.0}'
+      m_SerializableObject: '{"r":8.687153816223145,"g":3.1837737560272219,"b":0.0,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: ColorGlowingTexture
@@ -3164,7 +3164,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":0.4716981053352356,"b":0.413642942905426,"a":1.0}'
+      m_SerializableObject: '{"r":0.0,"g":1.0,"b":0.8795811533927918,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Color1
@@ -3334,7 +3334,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":0.027450980618596078,"b":0.04313725605607033,"a":1.0}'
+      m_SerializableObject: '{"r":0.0,"g":0.2634970545768738,"b":0.2924528121948242,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Color2
@@ -5550,7 +5550,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 2228, y: 1163}
+  m_UIPosition: {x: 2218, y: 1165}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -5691,7 +5691,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":32.0,"b":14.305882453918457,"a":1.0}'
+      m_SerializableObject: '{"r":0.0,"g":5.992156982421875,"b":2.5411765575408937,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Color_3B8D5AF4
@@ -9490,7 +9490,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.1
+      m_SerializableObject: 0.2
     m_Space: 2147483647
   m_Property:
     name: A
@@ -9524,7 +9524,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.2
+      m_SerializableObject: 0.4
     m_Space: 2147483647
   m_Property:
     name: B
@@ -9878,7 +9878,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":6.506846904754639,"g":2.7574384212493898,"b":0.6537628173828125,"a":1.0},"time":0.0},{"color":{"r":0.08649037778377533,"g":0.74603670835495,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.10000763088464737},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":8.687153816223145,"g":3.1837737560272219,"b":0.0,"a":1.0},"time":0.0},{"color":{"r":0.08649037778377533,"g":0.74603670835495,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.10000763088464737},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
