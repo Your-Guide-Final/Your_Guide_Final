@@ -37,7 +37,8 @@ public class CombatGestion : MonoBehaviour
 
     [Header("Start")]
     [SerializeField] float timeBeforeFirstWave;
-    [SerializeField] List<GameObject> murZoneBattle;
+    [SerializeField] List<Animator> murZoneBattle;
+    [SerializeField] string openWallParameter;
 
     
 
@@ -58,7 +59,7 @@ public class CombatGestion : MonoBehaviour
 
     private void Awake()
     {
-        ChangeEtatMur(false);
+        ChangeEtatMur(true);
         onBattle = false;
         currentWaveIndex = 0;
         nbEnemiKilled=0;
@@ -99,7 +100,7 @@ public class CombatGestion : MonoBehaviour
     {
         //Debug.Log("StartBattle");
         onBattle = true;
-        ChangeEtatMur(true);
+        ChangeEtatMur(false);
 
         if (waves[currentWaveIndex].nbEnemiCac > 0)
         {
@@ -122,7 +123,7 @@ public class CombatGestion : MonoBehaviour
     public void EndBattle()
     {
         onBattle = false;
-        ChangeEtatMur(false);
+        ChangeEtatMur(true);
         camManager.ChangeActifCamera(0);
         soundManager.StopBattleMusic();
     }
@@ -131,7 +132,7 @@ public class CombatGestion : MonoBehaviour
     {
         foreach (var item in murZoneBattle)
         {
-            item.SetActive(etat);
+            item.SetBool(openWallParameter,etat);
         }
     }
 
