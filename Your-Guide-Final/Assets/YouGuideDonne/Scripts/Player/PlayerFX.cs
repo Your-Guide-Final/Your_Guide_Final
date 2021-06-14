@@ -152,7 +152,8 @@ public class PlayerFX : MonoBehaviour
         if(canHeal && !healSignOn)
         {
             //Debug.Log("Fx Canheal On");
-            //canHealSign.SetBool(healSignAliveEvent, true);
+            canHealSign.Reinit();
+            canHealSign.SetBool(healSignAliveEvent, true);
             canHealSign.SendEvent(healStartEvent);
             healSignOn = true;
         }
@@ -170,8 +171,9 @@ public class PlayerFX : MonoBehaviour
 
     public void PlayHealFx()
     {
+        healZone.Reinit();
         //healZone.gameObject.SetActive(true);
-        //healZone.SetBool(healAliveEvent, true);
+        healZone.SetBool(healAliveEvent, true);
         healZone.SendEvent(healStartEvent);
         healParticule.SendEvent(healStartEvent);
     }
@@ -179,6 +181,7 @@ public class PlayerFX : MonoBehaviour
     public void StopHealFx()
     {
         //healZone.gameObject.SetActive(false);
+        
         healZone.SetBool(healAliveEvent, false);
         healZone.SendEvent(healStopEvent);
         healParticule.SendEvent(healStopEvent);

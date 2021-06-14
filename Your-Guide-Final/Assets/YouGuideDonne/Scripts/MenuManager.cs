@@ -10,6 +10,11 @@ public class MenuManager : MonoBehaviour
     bool isActive = false;
     float lastTimeValue = 1;
     public bool menuPause = false;
+
+    [SerializeField] Animator transitionAnimator;
+    [SerializeField] string transitionParameter;
+    [SerializeField] string transitionParameterEnd;
+    [SerializeField] float timeToChangeScene;
     //public AudioSource audioSource;
     //public AudioClip valideSound;
 
@@ -36,11 +41,32 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    public void LoadScene(string sceneName)
+    public void StartLoadScene(string sceneName)
     {
+        StartCoroutine(LoadScene(sceneName));
+        
 
+    }
+
+    public IEnumerator LoadScene(string sceneName)
+    {
+        transitionAnimator.SetTrigger(transitionParameter);
+        yield return new WaitForSeconds(timeToChangeScene);
         SceneManager.LoadScene(sceneName);
+    }
 
+    public void StartLoadSceneFinal(string sceneName)
+    {
+        StartCoroutine(LoadScene(sceneName));
+
+
+    }
+
+    public IEnumerator LoadSceneFinal(string sceneName)
+    {
+        transitionAnimator.SetTrigger(transitionParameterEnd);
+        yield return new WaitForSeconds(timeToChangeScene);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void CloseApli()
