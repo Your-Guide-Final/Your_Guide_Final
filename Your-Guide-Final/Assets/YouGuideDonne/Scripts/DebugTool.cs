@@ -30,7 +30,7 @@ public class DebugTool : MonoBehaviour
     [SerializeField] string menuName;
 
     [Header("PointToTP")]
-
+    [SerializeField] List<Transform> pointTp;
 
     [Header("UI")]
     [SerializeField] GameObject debugUI;
@@ -110,9 +110,10 @@ public class DebugTool : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(adrenalineUpInput))
+        if (Input.GetKeyDown(tpReceptacle))
         {
-            pControler.pAdrenaline.AddAdrenalineValue(10);
+            //pControler.pAdrenaline.AddAdrenalineValue(10);
+            rControler.transform.position = pControler.transform.position + new Vector3(0, 0.2f, 0);
         }
 
         if (Input.GetKeyDown(adrenalineMaxInput))
@@ -132,6 +133,30 @@ public class DebugTool : MonoBehaviour
             {
                 adrenalineInfiniFont.color = colorOnOff.Evaluate(0);
 
+            }
+        }
+
+        if (Input.GetKeyDown(stopCombat))
+        {
+            CombatGestion[] combatGestions = FindObjectsOfType<CombatGestion>();
+            foreach (var combatGestion in combatGestions)
+            {
+                if (combatGestion.onBattle)
+                {
+                    combatGestion.EndBattle();
+                }
+            }
+        }
+
+        for (int i = 0; i < tpInput.Count; i++)
+        {
+            if (Input.GetKeyDown(tpInput[i]))
+            {
+                if (pointTp[i] != null)
+                {
+                    pControler.transform.position = pointTp[i].position;
+                    rControler.transform.position = pointTp[i].position + new Vector3(0, 0.2f, 0);
+                }
             }
         }
 

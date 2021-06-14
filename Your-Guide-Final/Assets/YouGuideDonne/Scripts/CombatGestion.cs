@@ -49,7 +49,7 @@ public class CombatGestion : MonoBehaviour
 
     int nbEnemi;
 
-    bool onBattle;
+    public bool onBattle;
 
     int currentWaveIndex;
     int nbEnemiKilled;

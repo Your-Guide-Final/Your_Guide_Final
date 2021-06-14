@@ -56,10 +56,10 @@ public class SoundManager : MonoBehaviour
 
     public void SetLifeMusicValue(float value)
     {
-        float cancer;
+        //float cancer;
         eIntance.setParameterByID(lifeParameterId, value);
-        eIntance.getParameterByID(battleParameterId, out cancer);
-        Debug.Log("Life Value Music : " + cancer);
+        //eIntance.getParameterByID(battleParameterId, out cancer);
+        //Debug.Log("Life Value Music : " + cancer);
     }
 
 }
