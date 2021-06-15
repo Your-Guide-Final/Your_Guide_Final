@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 3191770436131451269}
   - component: {fileID: 2009918080171015712}
   - component: {fileID: 4323559621926750954}
-  - component: {fileID: 519685713466783606}
+  - component: {fileID: 4275837990188881470}
   m_Layer: 0
   m_Name: Vase1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3191770436131451269
 Transform:
@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,8 +81,9 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &519685713466783606
-MeshCollider:
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4275837990188881470
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6130811657303119849, guid: bd701323d0027904aa6b5e8f32313036, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.1827581, y: 0.5648706, z: 1.182758}
+  m_Center: {x: -0.000000029802322, y: 0.2824353, z: 0}
