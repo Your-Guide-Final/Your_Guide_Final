@@ -755,6 +755,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3432681424463741560}
     m_Modifications:
+    - target: {fileID: 1475677997721325237, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f96ccfb51f2667f48952a2ca32c14b58, type: 2}
     - target: {fileID: 2865722497996760105, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -811,6 +815,10 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5744651079097602672, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f96ccfb51f2667f48952a2ca32c14b58, type: 2}
     - target: {fileID: 6848523094720571113, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
       propertyPath: m_Name
       value: Cliff_Prefab1 (8)
@@ -1169,6 +1177,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3432681424463741560}
     m_Modifications:
+    - target: {fileID: 1475677997721325237, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f96ccfb51f2667f48952a2ca32c14b58, type: 2}
     - target: {fileID: 2865722497996760105, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1325,6 +1337,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3432681424463741560}
     m_Modifications:
+    - target: {fileID: 1475677997721325237, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f96ccfb51f2667f48952a2ca32c14b58, type: 2}
     - target: {fileID: 2865722497996760105, guid: a7b64793131bbb941817ca1a2d724974, type: 3}
       propertyPath: m_RootOrder
       value: 13
