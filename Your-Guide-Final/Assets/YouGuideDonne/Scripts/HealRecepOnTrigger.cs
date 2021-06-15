@@ -11,6 +11,8 @@ public class HealRecepOnTrigger : MonoBehaviour
     [SerializeField] private string eventHealSfxName;
     [SerializeField] VisualEffect healVfx;
     [SerializeField] string eventVfx;
+    [SerializeField] int healValue = 10;
+    [SerializeField] float timeBetweenHeal = 0.3f;
 
     private void Awake()
     {
@@ -25,11 +27,31 @@ public class HealRecepOnTrigger : MonoBehaviour
         {
             if (!alreadyTrigger)
             {
-                rControler.rLife.TakeDamage(-Mathf.RoundToInt(rControler.rLife.maxLifeValue));
-                alreadyTrigger = true;
+                alreadyTrigger = true;                
                 FMODUnity.RuntimeManager.PlayOneShot(eventHealSfxName, rControler.transform.position);
-                healVfx.SendEvent(eventVfx);
+                StartCoroutine(FullHealRecep(rControler));
+                
             }
+        }
+    }
+
+
+    public IEnumerator FullHealRecep(ReceptacleControler rControler)
+    {
+        float timer = timeBetweenHeal;
+        while (!rControler.rLife.IsLifeMax())
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= timeBetweenHeal)
+            {
+                rControler.rLife.TakeDamage(-healValue);
+                //FMODUnity.RuntimeManager.PlayOneShot(eventHealSfxName, rControler.transform.position);
+                healVfx.SendEvent(eventVfx);
+                timer = 0;
+
+            }
+            yield return new WaitForSeconds(Time.deltaTime);
         }
     }
 }
