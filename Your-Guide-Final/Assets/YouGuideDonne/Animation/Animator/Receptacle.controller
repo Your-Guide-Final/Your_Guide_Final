@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04842c7ff839534eb7c95f0b8ac5e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timing: 0
-  eventName: event:/Ennemies/EnnemyHIT
+  Timing: 0.1
+  eventName: event:/Receptacle/ReceptacleHit
 --- !u!1102 &-7730648456387871689
 AnimatorState:
   serializedVersion: 6

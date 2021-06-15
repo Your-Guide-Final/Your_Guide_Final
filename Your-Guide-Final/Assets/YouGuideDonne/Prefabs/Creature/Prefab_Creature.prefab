@@ -1239,6 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7812619368954097863}
   - component: {fileID: 2405055966618486887}
+  - component: {fileID: 5499927350491490112}
   m_Layer: 0
   m_Name: Prefab_Creature
   m_TagString: Untagged
@@ -1281,6 +1282,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5499927350491490112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7430991340598995581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4312fa1a0ba5fe946ab9f9145f8daac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedParameter: 
+  drinkParameter: 
+  ChokParameter: 
+  IddleParameter: 
+  maxTimeToSecondIdle: 0
+  canDrink: 0
+  maxTimeToDrink: 0
+  TimeDrink: 0
+  posIdle: {fileID: 0}
+  posToHide: {fileID: 0}
+  speedRun: 0
+  speedWalk: 0
 --- !u!1 &7535729154245040355
 GameObject:
   m_ObjectHideFlags: 0

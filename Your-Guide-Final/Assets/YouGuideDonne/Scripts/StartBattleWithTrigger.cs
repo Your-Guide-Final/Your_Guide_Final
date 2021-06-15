@@ -21,7 +21,7 @@ public class StartBattleWithTrigger : MonoBehaviour
         if ( pControler != null && !alreadyTrigger)
         {
             alreadyTrigger = true;
-            combatGestion.StartBattle();
+            combatGestion.StartBattle(pControler.transform);
         }
     }
 }

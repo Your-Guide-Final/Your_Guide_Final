@@ -39,10 +39,12 @@ public class CombatGestion : MonoBehaviour
     [SerializeField] float timeBeforeFirstWave;
     [SerializeField] List<Animator> murZoneBattle;
     [SerializeField] string openWallParameter;
+    [FMODUnity.EventRef]
+    [SerializeField] private string eventStartSound;
 
-    
 
-    
+
+
     int nbEnnemiCac;
     
     int nbEnnemiRange;
@@ -96,11 +98,16 @@ public class CombatGestion : MonoBehaviour
 
 
 
-    public void StartBattle()
+    public void StartBattle(Transform playerTransform)
     {
         //Debug.Log("StartBattle");
         onBattle = true;
         ChangeEtatMur(false);
+        if (eventStartSound != null)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(eventStartSound, playerTransform.position);
+
+        }
 
         if (waves[currentWaveIndex].nbEnemiCac > 0)
         {
