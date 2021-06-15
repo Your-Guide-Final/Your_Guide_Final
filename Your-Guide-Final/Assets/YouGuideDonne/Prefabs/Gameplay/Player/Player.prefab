@@ -1736,8 +1736,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 6430627797546463120}
+    m_TransformParent: {fileID: 5201504845920915200}
     m_Modifications:
+    - target: {fileID: 2087079680007000045, guid: b936427f5d7f7ce4cbc50283ec44cc9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2430708431952027872, guid: b936427f5d7f7ce4cbc50283ec44cc9d, type: 3}
       propertyPath: eventSfxName
       value: event:/Player/PlayerFootsteps
@@ -1866,14 +1870,14 @@ SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8123713792340650024, guid: 3df52a6c8d99df145ba44cdfa07c42fd, type: 3}
   m_PrefabInstance: {fileID: 5522208430222027877}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6430627797546463120 stripped
+--- !u!4 &5201504845920915200 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1557399560090764277, guid: 3df52a6c8d99df145ba44cdfa07c42fd, type: 3}
+  m_CorrespondingSourceObject: {fileID: 328101236393632613, guid: 3df52a6c8d99df145ba44cdfa07c42fd, type: 3}
   m_PrefabInstance: {fileID: 5522208430222027877}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8999166780100784946 stripped
+--- !u!4 &852942423959583053 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3477242695538843479, guid: 3df52a6c8d99df145ba44cdfa07c42fd, type: 3}
+  m_CorrespondingSourceObject: {fileID: -4074471429000293080, guid: 3df52a6c8d99df145ba44cdfa07c42fd, type: 3}
   m_PrefabInstance: {fileID: 5522208430222027877}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &5415695316197329806 stripped
@@ -1891,8 +1895,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8999166780100784946}
+    m_TransformParent: {fileID: 852942423959583053}
     m_Modifications:
+    - target: {fileID: 2087079680007000045, guid: b936427f5d7f7ce4cbc50283ec44cc9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2430708431952027872, guid: b936427f5d7f7ce4cbc50283ec44cc9d, type: 3}
       propertyPath: eventSfxName
       value: event:/Player/PlayerFootsteps

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class HealRecepOnTrigger : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class HealRecepOnTrigger : MonoBehaviour
 
     [FMODUnity.EventRef]
     [SerializeField] private string eventHealSfxName;
+    [SerializeField] VisualEffect healVfx;
+    [SerializeField] string eventVfx;
 
     private void Awake()
     {
@@ -25,6 +28,7 @@ public class HealRecepOnTrigger : MonoBehaviour
                 rControler.rLife.TakeDamage(-Mathf.RoundToInt(rControler.rLife.maxLifeValue));
                 alreadyTrigger = true;
                 FMODUnity.RuntimeManager.PlayOneShot(eventHealSfxName, rControler.transform.position);
+                healVfx.SendEvent(eventVfx);
             }
         }
     }

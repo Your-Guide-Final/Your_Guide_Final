@@ -10,7 +10,7 @@ public class FootStepSfx : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        UnityEngine.Debug.Log("trigger");
+        //UnityEngine.Debug.Log("trigger");
         FMODUnity.RuntimeManager.PlayOneShot(eventSfxName, transform.position);
     }
 
