@@ -18,6 +18,7 @@ public class MenuManager : MonoBehaviour
     //public AudioSource audioSource;
     //public AudioClip valideSound;
 
+    
 
     public void SetPauseOnOff()
     {
@@ -89,6 +90,11 @@ public class MenuManager : MonoBehaviour
         }
 
     }
+
+    /*public void ChangeCurrentSelected(GameObject gameObject)
+    {
+
+    }*/
 
     // Update is called once per frame
     void Update()

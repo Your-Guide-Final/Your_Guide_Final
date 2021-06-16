@@ -7,29 +7,24 @@ public class LoadSceneOnInput : MonoBehaviour
 {
     public string input;
     public string sceneName;
+
+    MenuManager menu;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        menu = FindObjectOfType<MenuManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(input))
+        if (Input.GetButtonDown(input))
         {
-            SceneManager.LoadScene(sceneName);
+            menu.StartLoadScene(sceneName);
         }
     }
 
-    public void resetScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    
 
-    }
-
-    public void LoadScene(string name)
-    {
-        SceneManager.LoadScene(name);
-    }
+    
 }
