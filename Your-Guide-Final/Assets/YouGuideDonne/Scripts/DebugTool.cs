@@ -79,7 +79,7 @@ public class DebugTool : MonoBehaviour
         if (Input.GetKeyDown(resetSceneInput))
         {
             string activeScene = SceneManager.GetActiveScene().name;
-            menuManager.LoadScene(activeScene);
+            menuManager.StartLoadScene(activeScene);
         }
 
         if (Input.GetKeyDown(loadMenuInput))
@@ -155,7 +155,9 @@ public class DebugTool : MonoBehaviour
             {
                 if (pointTp[i] != null)
                 {
+                    pControler.pCharacterController.enabled = false;
                     pControler.transform.position = pointTp[i].position;
+                    pControler.pCharacterController.enabled = true;
                     rControler.transform.position = pointTp[i].position + new Vector3(0, 0.2f, 0);
                 }
             }

@@ -5,16 +5,16 @@ using UnityEngine;
 public class DeathStateMachine : StateMachineBehaviour
 {
     EnemiControler eControler;
-    [SerializeField] GameObject particuleDeath;
-    [SerializeField] GameObject soulsGameObject;
+    
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         eControler = animator.GetComponent<EnemiRefControler>().eControler;
-        Instantiate(particuleDeath, eControler.transform.position, eControler.transform.rotation);
+        /*Instantiate(particuleDeath, eControler.transform.position, eControler.transform.rotation);
         Instantiate(soulsGameObject, eControler.transform.position, eControler.transform.rotation);
-        Destroy(eControler.gameObject);
+        Destroy(eControler.gameObject);*/
+        eControler.eLife.StartDeath();
         
     }
 
