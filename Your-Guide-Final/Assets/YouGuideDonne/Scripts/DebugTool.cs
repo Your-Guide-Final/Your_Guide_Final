@@ -39,7 +39,7 @@ public class DebugTool : MonoBehaviour
     [SerializeField] Gradient colorOnOff;
 
 
-
+    private MenuManager menuManager;    
 
     private PlayerControler pControler;
     private ReceptacleControler rControler;
@@ -48,6 +48,7 @@ public class DebugTool : MonoBehaviour
 
     private void Awake()
     {
+        menuManager = FindObjectOfType<MenuManager>();
         pControler = FindObjectOfType<PlayerControler>();
         rControler = FindObjectOfType<ReceptacleControler>();
         adrenalineInfini = false;
@@ -78,7 +79,7 @@ public class DebugTool : MonoBehaviour
         if (Input.GetKeyDown(resetSceneInput))
         {
             string activeScene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(activeScene);
+            menuManager.LoadScene(activeScene);
         }
 
         if (Input.GetKeyDown(loadMenuInput))

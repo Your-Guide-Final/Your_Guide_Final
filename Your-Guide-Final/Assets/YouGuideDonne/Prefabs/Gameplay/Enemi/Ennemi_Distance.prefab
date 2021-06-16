@@ -423,7 +423,7 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 0, y: 1, z: 0}
+      - m_Value: {x: 13.5, y: 1, z: 11.5}
         m_Name: Position impact
         m_Overridden: 1
     m_Vector4f:
@@ -821,7 +821,7 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 0, y: 1, z: 0}
+      - m_Value: {x: 13.5, y: 1, z: 11.5}
         m_Name: StartPosition
         m_Overridden: 1
     m_Vector4f:
@@ -1397,7 +1397,7 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 0, y: 0.1, z: 0}
+      - m_Value: {x: 13.5, y: 0.1, z: 11.5}
         m_Name: SpawnPosition
         m_Overridden: 1
     m_Vector4f:
@@ -1758,11 +1758,11 @@ PrefabInstance:
     - target: {fileID: -7239569249797455640, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7b3d3d67ddb015540b2c0a23c7c275f4, type: 2}
+      objectReference: {fileID: 2100000, guid: 377dbd236422311428f42ef1e0cfe1b1, type: 2}
     - target: {fileID: -7239569249797455640, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 7b3d3d67ddb015540b2c0a23c7c275f4, type: 2}
+      objectReference: {fileID: 2100000, guid: 377dbd236422311428f42ef1e0cfe1b1, type: 2}
     - target: {fileID: -6299183438786096671, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
