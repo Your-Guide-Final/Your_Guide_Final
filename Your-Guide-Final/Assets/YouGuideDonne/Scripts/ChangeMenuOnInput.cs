@@ -8,6 +8,7 @@ public class ChangeMenuOnInput : MonoBehaviour
     [SerializeField] GameObject objectToDisable;
     [SerializeField] GameObject objectToEnable;
     [SerializeField] int newCameraIndex = 0;
+    [SerializeField] bool changeCam = true;
 
     CameraManager cam;
     private void Awake()
@@ -22,7 +23,11 @@ public class ChangeMenuOnInput : MonoBehaviour
         {
             objectToDisable.SetActive(false);
             objectToEnable.SetActive(true);
-            cam.ChangeActifCamera(0);
+            if (changeCam)
+            {
+                cam.ChangeActifCamera(0);
+
+            }
         }
     }
 
