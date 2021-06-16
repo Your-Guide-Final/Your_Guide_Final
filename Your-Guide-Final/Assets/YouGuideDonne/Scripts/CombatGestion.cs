@@ -36,9 +36,14 @@ public class CombatGestion : MonoBehaviour
     //[SerializeField] float timeToRespawn;
 
     [Header("Start")]
+    [SerializeField] float timeBetweenSoundAndStelle;
+    [SerializeField] float timebeforeStartBattle;
     [SerializeField] float timeBeforeFirstWave;
     [SerializeField] List<Animator> murZoneBattle;
     [SerializeField] string openWallParameter;
+
+    [FMODUnity.EventRef]
+    [SerializeField] private string eventStelleSound;
     [FMODUnity.EventRef]
     [SerializeField] private string eventStartSound;
 
@@ -100,9 +105,18 @@ public class CombatGestion : MonoBehaviour
 
     public void StartBattle(Transform playerTransform)
     {
-        //Debug.Log("StartBattle");
+        StartCoroutine(StartBattleTiming(playerTransform));
+
+    }
+
+    public IEnumerator StartBattleTiming(Transform playerTransform)
+    {
         onBattle = true;
+        FMODUnity.RuntimeManager.PlayOneShot(eventStelleSound, playerTransform.position);
+        yield return new WaitForSeconds(timeBetweenSoundAndStelle);
         ChangeEtatMur(false);
+        yield return new WaitForSeconds(timebeforeStartBattle);
+
         if (eventStartSound != null)
         {
             FMODUnity.RuntimeManager.PlayOneShot(eventStartSound, playerTransform.position);
@@ -124,7 +138,6 @@ public class CombatGestion : MonoBehaviour
 
         camManager.ChangeActifCamera(2);
         soundManager.StartBattleMusic();
-
     }
 
     public void EndBattle()
@@ -133,6 +146,17 @@ public class CombatGestion : MonoBehaviour
         ChangeEtatMur(true);
         camManager.ChangeActifCamera(0);
         soundManager.StopBattleMusic();
+    }
+
+    public IEnumerator EndBattelTiming()
+    {
+        onBattle = false;
+        camManager.ChangeActifCamera(0);
+        soundManager.StopBattleMusic();
+        Transform playerTransform = FindObjectOfType<PlayerControler>().transform;
+        FMODUnity.RuntimeManager.PlayOneShot(eventStelleSound, playerTransform.position);
+        yield return new WaitForSeconds(timeBetweenSoundAndStelle);
+        ChangeEtatMur(true);
     }
 
     public void ChangeEtatMur(bool etat)

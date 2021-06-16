@@ -13146,13 +13146,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - prefabEnemiCac: {fileID: 9013693943646334546, guid: f09bd30be0651504180a1052b34d5506, type: 3}
-    nbEnemiCac: 0
+    nbEnemiCac: 1
     spawnPointCac:
     - {fileID: 189769714}
     - {fileID: 1427335798}
     - {fileID: 418802142}
     prefabEnemiRange: {fileID: 454686908365066240, guid: bf9a7952059451446a69cd0696e8a035, type: 3}
-    nbEnemiRange: 1
+    nbEnemiRange: 0
     spawnPointRange:
     - {fileID: 1840203326}
     - {fileID: 28230600}
@@ -13160,13 +13160,13 @@ MonoBehaviour:
     nbEnemiToKillToNextWave: 1
     timeDelayBeforeNextWave: 0
   - prefabEnemiCac: {fileID: 9013693943646334546, guid: f09bd30be0651504180a1052b34d5506, type: 3}
-    nbEnemiCac: 0
+    nbEnemiCac: 1
     spawnPointCac:
     - {fileID: 189769714}
     - {fileID: 1427335798}
     - {fileID: 418802142}
     prefabEnemiRange: {fileID: 454686908365066240, guid: bf9a7952059451446a69cd0696e8a035, type: 3}
-    nbEnemiRange: 1
+    nbEnemiRange: 0
     spawnPointRange:
     - {fileID: 1840203326}
     - {fileID: 28230600}
@@ -13174,13 +13174,13 @@ MonoBehaviour:
     nbEnemiToKillToNextWave: 1
     timeDelayBeforeNextWave: 0
   - prefabEnemiCac: {fileID: 9013693943646334546, guid: f09bd30be0651504180a1052b34d5506, type: 3}
-    nbEnemiCac: 0
+    nbEnemiCac: 1
     spawnPointCac:
     - {fileID: 189769714}
     - {fileID: 1427335798}
     - {fileID: 418802142}
     prefabEnemiRange: {fileID: 454686908365066240, guid: bf9a7952059451446a69cd0696e8a035, type: 3}
-    nbEnemiRange: 1
+    nbEnemiRange: 0
     spawnPointRange:
     - {fileID: 1840203326}
     - {fileID: 28230600}
@@ -13191,6 +13191,8 @@ MonoBehaviour:
   spawnCheckLayer:
     serializedVersion: 2
     m_Bits: 4096
+  timeBetweenSoundAndStelle: 2
+  timebeforeStartBattle: 2
   timeBeforeFirstWave: 0
   murZoneBattle:
   - {fileID: 1578425976}
@@ -13198,6 +13200,7 @@ MonoBehaviour:
   - {fileID: 2100792220}
   - {fileID: 1353696808}
   openWallParameter: Open
+  eventStelleSound: event:/Environment/FightZone OpeningClosing
   eventStartSound: event:/Ennemies/FightStart
   onBattle: 0
 --- !u!4 &1567947911
