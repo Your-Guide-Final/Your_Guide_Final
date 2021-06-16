@@ -22,11 +22,11 @@ public class LoadSceneOnTrigger : MonoBehaviour
         {
             if (finalTransition)
             {
-                menuManager.LoadSceneFinal(sceneName);
+                menuManager.StartLoadSceneFinal(sceneName);
             }
             else
             {
-                menuManager.LoadScene(sceneName);
+                menuManager.StartLoadScene(sceneName);
             }
         }
     }

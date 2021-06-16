@@ -57,7 +57,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartLoadSceneFinal(string sceneName)
     {
-        StartCoroutine(LoadScene(sceneName));
+        StartCoroutine(LoadSceneFinal(sceneName));
 
 
     }
