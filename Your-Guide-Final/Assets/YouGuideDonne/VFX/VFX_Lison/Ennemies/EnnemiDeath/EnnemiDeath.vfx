@@ -16,10 +16,10 @@ MonoBehaviour:
   - title: Explostion
     position:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 100
-      height: 100
+      x: 2719
+      y: -256
+      width: 1532
+      height: 2546
     contents:
     - model: {fileID: 8926484042661614583}
       id: 0
@@ -87,9 +87,9 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 0
+    x: 829
     y: -534
-    width: 4226
+    width: 3422
     height: 3436
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":189.99061584472657,"g":82.46788787841797,"b":18.9593505859375,"a":1.0},"time":0.0},{"color":{"r":189.99061584472657,"g":82.46788787841797,"b":18.9593505859375,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":0.800000011920929},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":23.9686279296875,"g":13.427451133728028,"b":0.0,"a":1.0},"time":0.0},{"color":{"r":23.9686279296875,"g":13.427451133728028,"b":0.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":0.800000011920929},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_ImportDependencies: []
   m_GraphVersion: 6
   m_ResourceVersion: 1
-  m_saved: 1
+  m_saved: 0
   m_SubgraphDependencies:
   - {fileID: 5371698745253816930, guid: dba0806e5c0077049ad506da67f81498, type: 3}
   m_CategoryPath: 
@@ -1753,7 +1753,6 @@ MonoBehaviour:
   m_Owners:
   - {fileID: 8926484042661614595}
   - {fileID: 8926484042661614636}
-  - {fileID: 8926484042661614652}
   dataType: 0
   capacity: 1000
   stripCapacity: 16
@@ -2767,9 +2766,7 @@ MonoBehaviour:
     - context: {fileID: 8926484042661614595}
       slotIndex: 0
   m_OutputFlowSlot:
-  - link:
-    - context: {fileID: 8926484042661614652}
-      slotIndex: 0
+  - link: []
   integration: 0
   angularIntegration: 0
   ageParticles: 1
@@ -3037,11 +3034,9 @@ MonoBehaviour:
   - {fileID: 8926484042661614951}
   m_OutputSlots: []
   m_Label: 
-  m_Data: {fileID: 8926484042661614605}
+  m_Data: {fileID: 0}
   m_InputFlowSlot:
-  - link:
-    - context: {fileID: 8926484042661614636}
-      slotIndex: 0
+  - link: []
   m_OutputFlowSlot:
   - link: []
   blendMode: 1
@@ -5331,7 +5326,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.ArcSphere, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"sphere":{"center":{"x":0.0,"y":0.0,"z":0.0},"radius":1.149999976158142},"arc":6.2831854820251469}'
+      m_SerializableObject: '{"sphere":{"center":{"x":0.0,"y":0.0,"z":0.0},"radius":0.75},"arc":6.2831854820251469}'
     m_Space: 0
   m_Property:
     name: ArcSphere
@@ -7255,7 +7250,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.ArcSphere, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"sphere":{"center":{"x":0.0,"y":0.0,"z":0.0},"radius":1.149999976158142},"arc":6.2831854820251469}'
+      m_SerializableObject: '{"sphere":{"center":{"x":0.0,"y":0.0,"z":0.0},"radius":0.75},"arc":6.2831854820251469}'
     m_Space: 0
   m_Property:
     name: ArcSphere
@@ -7970,7 +7965,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -8003,7 +7998,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614943}
       inputSlot: {fileID: 8926484042661614594}
-    position: {x: 2747, y: 2096}
+    position: {x: 2744, y: 2045}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614943
@@ -8031,7 +8026,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":189.99061584472657,"g":82.46788787841797,"b":18.9593505859375,"a":1.0},"time":0.0},{"color":{"r":189.99061584472657,"g":82.46788787841797,"b":18.9593505859375,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":0.800000011920929},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":23.9686279296875,"g":13.427451133728028,"b":0.0,"a":1.0},"time":0.0},{"color":{"r":23.9686279296875,"g":13.427451133728028,"b":0.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":0.800000011920929},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: o

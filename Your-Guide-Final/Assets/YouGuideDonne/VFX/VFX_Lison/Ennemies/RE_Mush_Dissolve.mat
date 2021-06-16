@@ -20,15 +20,16 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_RE_Mush
+  m_Name: RE_Mush_Dissolve
   m_Shader: {fileID: -6465566751694194690, guid: 7a8c9768c16097e4ea3c6137cdf8cc6a, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 2450
   stringTagMap:
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -140,7 +141,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_071f76d440a64de2afc38e917b56ca41: 0.02
-    - Vector1_43939315340d4bff963010d595b30878: 0.48
+    - Vector1_43939315340d4bff963010d595b30878: 0
     - Vector1_c7c80eec5cdc49b587c50aaa9012f0bf: 3
     - Vector1_c7c80eec5cdc49b587c50aaa9012f0bf_1: 10
     - Vector1_deac1aa4b77046c6a679114b51bece93: 10
@@ -150,7 +151,7 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
-    - _AlphaCutoffEnable: 0
+    - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
@@ -252,7 +253,7 @@ Material:
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 3
-    - _ZTestGBuffer: 4
+    - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
