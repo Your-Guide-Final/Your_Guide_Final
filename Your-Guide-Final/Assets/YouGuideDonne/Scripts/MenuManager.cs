@@ -70,6 +70,15 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void LoadSceneWithoutTransition(string sceneName)
+    {
+        if(Time.timeScale != 1)
+        {
+            Time.timeScale = 1;
+        }
+        SceneManager.LoadScene(sceneName);
+    }
+
     public void CloseApli()
     {
 

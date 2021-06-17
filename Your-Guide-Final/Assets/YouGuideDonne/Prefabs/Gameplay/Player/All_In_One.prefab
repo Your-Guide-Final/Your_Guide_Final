@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155604936}
   m_LocalRotation: {x: 0.33141354, y: -0.46193963, z: 0.19134167, w: 0.8001033}
-  m_LocalPosition: {x: 12.8055, y: 14.849241, z: -7.5187144}
+  m_LocalPosition: {x: 12.805499, y: 14.849242, z: -7.5187135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8573876369553728113}
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 26.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3162,7 +3162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2580063840797973678}
   m_LocalRotation: {x: 0.33141354, y: -0.46193963, z: 0.19134167, w: 0.8001033}
-  m_LocalPosition: {x: 21.992908, y: 25.455843, z: -12.818864}
+  m_LocalPosition: {x: 21.992912, y: 25.455843, z: -12.818866}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1722832325717667687}
@@ -3305,7 +3305,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.15
+  m_fontSize: 26.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5387,7 +5387,7 @@ MonoBehaviour:
   adrenalineInfiniInput: f7
   stopCombat: f8
   tpInput: []
-  menuName: Menu_Final
+  menuName: Menu_FinalV2
   pointTp: []
   debugUI: {fileID: 7544145221847570273}
   godModeFont: {fileID: 5667145600852238002}
@@ -6150,7 +6150,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.6
+  m_fontSize: 26.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6462,7 +6462,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6669,8 +6669,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjectOffset: {x: 0, y: 1.5, z: 0}
-  m_LookaheadTime: 0.023
-  m_LookaheadSmoothing: 1.2
+  m_LookaheadTime: 0.762
+  m_LookaheadSmoothing: 30
   m_LookaheadIgnoreY: 0
   m_XDamping: 1
   m_YDamping: 1
@@ -7283,7 +7283,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.45
+  m_fontSize: 26.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7545,14 +7545,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4087238009775143320}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneWithoutTransition
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Menu_FInal
+          m_StringArgument: Menu_FInalV2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1008843731519082326

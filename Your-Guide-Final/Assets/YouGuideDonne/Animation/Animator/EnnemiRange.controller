@@ -556,7 +556,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Death
-  m_Speed: 2
+  m_Speed: 4
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:
@@ -729,7 +729,7 @@ BlendTree:
     m_Motion: {fileID: 5250379734545547093, guid: 15ea31ffc06442b4bbc67f50dce4d18a, type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 5
+    m_TimeScale: 7
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
